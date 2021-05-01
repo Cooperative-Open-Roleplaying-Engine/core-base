@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="core.xsl"?>
+
+<book>
+    <data>
+        <title>CORE</title>
+        <subtitle>Cooperative Open Role-playing Engine</subtitle>
+        <version>0.2</version>
+        <publication>2021</publication>
+        <language>English</language>
+        <author>Hugues Vandenbroucke</author>
+        <contributors>
+            <contributor>Amaury Michaux</contributor>
+            <contributor>Jean-Yves Atquet</contributor>
+            <contributor>Christophe Klopfert</contributor>
+        </contributors>
+        <licence>
+            The content of this book is published under the Creative Commons Licence under the terms CC BY-NC-SA, meaning it is freely available, modifiable and distributable, as long as it remains credited to its authors and contributors. All modification and distribution of this content must remain under the same licence, and commercial use of its content is strictly forbidden without explicit approval of the author.
+        </licence>
+    </data>
+    <section title="Introduction">
+        <chapter title="What is CORE?">
+            <text>Welcome to CORE, an open role-playing engine.</text>
+            <text title="A Role-playing Engine">
+                A role-playing engine is not a full game as such. It does not provide world descriptions or extensive lists of character options to choose from. The engine is a set of rules and principles that can apply to any game setting, to any universe, and that can be easily extended to form altogether a multiverse. The current book provides all the basic rules you need to play in any CORE Setting.
+            </text>
+            <text title="CORE Principles">
+                CORE is not yet another role-playing game reusing the same gaming systems that were developed before. It aims at providing a solid base for future growth and evolution in order to provide a very diverse gaming ecosystem while retaining compatibility and common rules.
+            </text>
+            <text level="2" title="Open and Collaborative">
+                CORE is an open and collaborative engine, meaning that it is available to everyone free of charge, anyone can adapt it, reuse its content and distribute their contributions. It relies on users' feedback and ideas for improvements. Moreover, as it is just an engine, it also relies on its community to produce content in the form of settings and extensions. Players are encouraged to develop their own content and explore new worlds and new concepts.
+            </text>
+            <text level="2" title="Simple and Extensive">
+                CORE intends to be a simple, while extensive, set of rules for role-playing games. The purpose is to provide a solid foundation for extensions and world settings while maintaining compatibility and possible interactions between them. In order to do so, all the rules are based on a single approach using 6-face dice rolls versus opposed rolls or fixed difficulty levels.
+            </text>
+            <text level="2" title="Extensible">
+                CORE is an engine, a set of rules that define how to play the game. In its design, CORE allows the player to select options to personalise their characters. This list is not exhaustive and can easily be extended, to provide more options or to match a particular setting. There is no limit in the amount of extensions or settings that can be used simultaneously, combining them can lead to new concepts and redefine a gaming universe.
+            </text>
+        </chapter>
+        <chapter title="Additional Content">
+            <text>
+                Because CORE is only an engine, additional content is required to play the game. This additional content can be provided in two forms.
+            </text>
+            <text title="CORE Extension">
+                A CORE Extension provides additional character options, new monsters or specific mechanisms. The book contains a set of generic rules that are compatible with the engine. It does not provide any world-specific content, it only provides more options and choices to the players and the GM.
+            </text>
+            <text title="CORE Setting">
+                A CORE Setting is a whole world that exists in the CORE multiverse. The book covers the history of the world, a description of regions, cities and people, and provides additional gaming options and rules for characters to come to life as real inhabitants of this world. As such, a CORE Setting is also a CORE Extension, as it provides the same content, plus additional background information.
+            </text>
+            <text>
+                Usually a CORE Setting provides all the additional content required to play in the world described in the book. A CORE Setting can also extend another CORE Setting, and unrelated settings can also be combined to create whole new worlds and extend the multiverse.
+            </text>
+        </chapter>
+        <chapter title="Let Us Begin">
+            <text title="How to Start?">
+                To start a game, you will need this book as well as a CORE Setting of your choice, and optionally one or more CORE Extensions. One of the participants will be the Game Master (GM), all the others will play characters. All players and the GM must know the rules, and have the necessary material as described further. The GM will tell the story and incarnate the monsters and the non-player characters (NPC), while the players will act as their own player characters (PC).
+            </text>
+            <text title="Material Requirements">
+            </text>
+            <text level="2" title="The Dice">
+                The play CORE, you will need regular 6-face dice (called D6). A die is referred to in the game as a "D", so 2D means two 6-face dice. As CORE may require to throw multiple dice of the same type at the same time, you can either roll the same die multiple times, or acquire multiple dice sets or additional specific dice to allow you to roll all dice at once. It is better if you can have two different sets of identical dice, as the system uses a combination of two dice pools, and having visually different dice sets allows you to easily distinguish the pools.
+            </text>
+            <text title="Calculating and Rounding">
+                While CORE tries to keep the amount of calculation as low and as easy as possible. However, it is possible that you have to use the division operation. In that case, you always round the result down, keeping only the integer part. So 5 divided by 2 results in 2, and 1 divided by 2 results in 0.
+            </text>
+        </chapter>
+    </section>
+    <section title="Playing the Game">
+        <chapter title="The Character">
+            <text>
+                A character is defined by a set of characteristics, a set of skills, and a set of abilities.
+                Together, these three sets define who your character is, what they can do, and how good they are at doing those things.
+            </text>
+            <text title="Characteristics">
+                Characteristics define the fundamental essence of the character, what they are as a being. They were born with them and developed those inherent traits through their lifestyle and life experience.
+            </text>
+            <text level="2" title="Traits">
+                Traits define the the foundations of a character, what they are as a being, how they work inside. They range from 0 (very weak, minimum required to survive) to 10 (beyond imagination). For most of the characters, the traits will rarely go higher than 5, which is already a very high score for a regular humanoid.
+            </text>
+            <text>
+                If, at any time, losing points in a trait would bring a character's trait score to 0, the character suffers from the the Drained condition as long as the trait score remains 0. If losing points would bring the trait below 0, the character dies immediately, and cannot be played anymore.
+            </text>
+            <definitions>
+                <definition title="Strength" abbreviation="STR">
+                    Strength defines how physically strong a character is, how much weight they can lift, how much physical power they can express.
+                </definition>
+                <definition title="Constitution" abbreviation="CON">
+                    Constitution defines how resilient a character is, how much effort and strain they can endure, how resistant their body is against external threats. Constitution directly influences the character's physical health.
+                </definition>
+                <definition title="Dexterity" abbreviation="DEX">
+                    Dexterity defines how accurate a character is with their hands, how capable they are at handling and manipulating objects, how precise they are in their fine hand gestures.
+                </definition>
+                <definition title="Agility" abbreviation="AGI">
+                    Agility defines how nimble a character is, how quickly they react, how swiftly they move, how well they can control their body to perform precise movements.
+                </definition>
+                <definition title="Perception" abbreviation="PER">
+                    Perception defines how acute a character is, how easily they can discern details, how quickly they can notice subtle features.
+                </definition>
+                <definition title="Intelligence" abbreviation="INT">
+                    Intelligence defines how smart a character is, how quickly they can relate pieces of information, how easily they learn and remember new concepts and knowledge.
+                </definition>
+                <definition title="Will" abbreviation="WIL">
+                    Will defines how determined a character is, how strong their mind is, how decided to reach a goal they can be. Will directly influences the character's mental health.
+                </definition>
+                <definition title="Presence" abbreviation="PRE">
+                    Presence defines how influential or convincing a character is, how appropriately they behave, how decisive their attitude can be.
+                </definition>
+            </definitions>
+            <text level="2" title="Defences">
+                Defences indicate how well a character is protected against a certain type of threat. Each trait can be used as a corresponding defence, with the same base score. Additional bonuses or maluses can also apply specific defences.
+            </text>
+            <text>
+                In addition to the trait defences, two additional defences exist:
+            </text>
+            <definitions>
+                <definition title="Physical Defence" abbreviation="PHY">
+                    The physical defence indicates how good a character at protecting themselves against physical aggression. This defence is often obtained through the use of armour or special abilities or skills. Each armour type describes how the Physical Defence is calculated. When no armour is worn and when no defence skill is used, the Physical Defence is equal to Agility. Different types of protection do not cumulate. If different ways of calculating the Physical Defence are available to a character, they pick one, and ignore the others. If an effect affects the Physical Defence, such as modifiers or bonus dice, it also affects any skill check or other roll that can be used instead of the default roll.
+                </definition>
+                <definition title="Mental Defence" abbreviation="MEN">
+                    The physical defence indicates how good a character at protecting themselves against psychic aggression. This defence is often obtained through the use of protection devices or special abilities or skills. Each protection type describes how the Mental Defence is calculated. When no protection is used, the Mental Defence is equal to Will. Different types of protection do not cumulate. If different ways of calculating the Mental Defence are available to a character, they pick one, and ignore the others. If an effect affects the Mental Defence, such as modifiers or bonus dice, it also affects any skill check or other roll that can be used instead of the default roll.
+                </definition>
+            </definitions>
+            <text>
+                 Defences are referred to as Def[abbreviation], so Def[INT] means the Intelligence defence, and Def[PHY] the physical defence.
+            </text>
+            <text level="2" title="Health">
+                Health defines the current general physical or mental state of a character. Attacks and external aggression may damage a character's health. Health is defined as a maximum and a current level. Health level can never go above its maximum. Damage done to health decrease the current level, down to a minimum of 0. Any loss or gain applied to the maximum Health is also applied to the current level. If, at any time, a character's maximum Physical or Mental Health becomes 0, the character dies, and cannot be played anymore.
+            </text>
+            <definitions>
+                <definition title="Physical Health">
+                    A character's physical health describes how well their body is. When at maximum, it means the character is in perfect shape, healthy and fit. When it decreases, in indicates that the character is wounded or suffers from a condition. If it reaches 0, the character becomes physically injured and can potentially die. The maximum Physical Health score equals to the Constitution score × 10 + modifiers provided by Abilities. Any modification of the Constitution trait is immediately reflected to the maximum Physical Health score.
+                </definition>
+                <definition title="Mental Health">
+                    A character's mental health describes how well their mind is. When at maximum, it means the character is sane, with full reasoning capacities. When it decreases, it indicates that the character is suffering from trauma or madness. If it reaches 0, the character becomes mentally injured and can potentially die. The maximum Physical Health score equals to the Will score × 10 + modifiers provided by Abilities. Any modification of the Will trait is immediately reflected to the maximum Physical Health score.
+                </definition>
+            </definitions>
+            <text level="2" title="Reaction">
+                Reaction defines how swiftly a character reacts to unexpected events and how quickly a character can undertake an action under pressure. Reaction is used to determine to order of actions during a combat round.
+            </text>
+            <text>
+                Reaction uses the sum of the Agility and the Perception. Any modification to one of those traits is immediately reflected in the Reaction score in the same way.
+            </text>
+            <text level="2" title="Speed">
+                Speed defines the maximum distance (in meters) a character can move as part of a movement action. A character can have more than one value if they have different ways of moving.
+            </text>
+            <text>
+                Speed is calculated as the sum of an origin base speed and Agility. Any modification to this trait is immediately reflected in the Speed score in the same way.
+            </text>
+            <text level="2" title="Other Characteristics">
+                Some CORE Extensions or CORE Settings may define additional characteristics that are relevant to the world and context they describe. Those characteristics, their descriptions and their use are described in the extension or setting books. They are likely to be used only in those specific contexts and settings, but they remain part of the character and they can be used whenever they apply to a situation.
+            </text>
+            <text title="Experience">
+                Experience defines how much a character has learned as well as how much they can still progress. During the game, the character will be awarded experience points (XP) by the GM. Those experience points add to the total experience gained by the character, defining how advanced they are. Moreover, experience points can be spent to improve the character's capabilities and influence the game. The use of Experience is described in the <reference ref="use_experience">Playing the Game - Using Experience</reference> section.
+            </text>
+            <text title="Skills">
+                Skills define the knowledge and the training in certain topics and situations. They define how capable a character is in a given domain.
+                All character's skills range from 0 (the character knows nothing in this topic) to 10 (the character is an expert in this field).
+                These numbers also indicate how likely your character is likely to succeed in an action that would qualify as "easy" in this domain.
+                In this way, an expert, with 10 in a given skill, will never fail in an easy action in his field of expertise.
+            </text>
+            <text>
+                Skills cover all aspects of a character's life. As such, there is no definite list of skills. A list of the most common skills is given in the <reference ref="charopts">Character Options</reference> section. CORE Extensions and CORE Settings can provide alternative or extended skill lists. New skills can of course also be added upon GM's agreement.
+            </text>
+            <text title="Abilities">
+                Abilities are unique capacities a character developed over time, acquired through teachings and practice, or through natural or supernatural evolution. All abilities are purchased with experience points, and provide new mechanics to that character. Every ability describes the benefits it provides, and may refer to unique sets of rules.
+            </text>
+            <text>
+                Abilities come with an associated cost in experience points, pre-requisites that must be met to acquire that ability and potentially a list of other abilities that are incompatible with it. A description of ability specifications as well as generic abilities are available in <reference ref="charopts-abilities">Character Options - Abilities</reference>. CORE Extensions and CORE Settings can provide new abilities along with their specific rules.
+            </text>
+        </chapter>
+        <chapter title="The CORE D6 System">
+            <text>
+                Most of the actions your character or adversaries will try to undertake will be solved through dice rolls.
+                The results of the roll will determine the outcome of the action. CORE uses a system based on opposed dice rolls from D6 pools.
+                So to determine whether an action succeeds or not, the player rolls a set of D6 and the result is compared to the target score, being either fixed or determined by an opposed roll. The difference between the roll and target will determine the extent of the success or failure.
+            </text>
+            <text title="Dice, Pools and Types">
+                The CORE D6 System only uses six-face dice, noted as D6. As the CORE D6 System only uses that type of dice, the 6 will be omitted. Dice are often referred to as an amount followed by a "D", so 5D means 5 six-face dice.
+            </text>
+            <text>
+                Dice pools are sets of dice coming from the same specified source. CORE rolls can use three types of dice pools: Trait Dice (TD), Skill Dice (SD) and Bonus Dice (BD). In addition, they can receive a fixed modifier. A roll can thus be described as [TD + SD + BD + modifier]. Rolls do not necessarily use all the pools, or receive a modifier. Note that some circumstances can alter or limit the amount of dice you can use from each pool. When a roll must be done, refer to the roll description to identify the pools that are used (and the eventual limitations), select your dice and roll accordingly.
+            </text>
+            <definitions>
+                <definition title="Trait Dice">
+                    Trait Dice are the dice that are provided by a trait. The pool of each trait is equivalent to the current trait score. This means that if you have an Intelligence score of 2, your trait dice pool for that trait equals to 2D. This pool is easily identifiable as it refers directly to a trait name (or abbreviation). If the source of the roll refers to a trait, this pool is used.
+                </definition>
+                <definition title="Skill Dice">
+                    Skill Dice are the dice that are provided by a skill. The pool of each skill is equivalent to the current skill score. This means that if a skill has a score of 2, your skill pool for that trait equals to 2D. This pool is easily identifiable as it refers directly to a skill name. If the source of the roll refers to a skill, this pool is used.
+                </definition>
+                <definition title="Bonus Dice">
+                    Bonus Dice are the dice that are provided by any other source. The various sources describe exactly how many bonus dice can be added. You can have multiple sources of bonus dice, and all the bonus dice are added to the pool.
+                </definition>
+                <definition title="Fixed Modifier">
+                    Fixed Modifiers are fixed amounts that must be added or subtracted from the roll result, after dice explosion or consumption. They can come from different sources, and all the modifiers apply to the result.
+                </definition>
+            </definitions>
+            <text title="Exploding Dice" ref_id="system_exploding_dice">
+                Exploding dice are dice that can be re-rolled when they display their maximum result (6 for a D6). The player sums up the roll result and then picks the dice they want to re-roll and rolls them again. The result of the new roll is added to the total result. If the new roll displays the maximum result again, the process can be repeated. The result is again added to the total and the die can be re-rolled.
+            </text>
+            <text title="Tests and Rolls">
+            </text>
+            <text level="2" title="Skill Tests">
+                All situations the characters will face will put their skills to the test. Whatever the action a character is willing to undertake, the only thing the player will do is roll all dice from the corresponding Skill Pool. The result of the roll is then compared to the target, being the opposed roll result, or the difficult level in case of a fixed target. If the result is higher than the target, the attempt is a success, and it is a failure otherwise. 
+            </text>
+            <text>
+                When a situation allows or requires a skill test, it is described as "roll Skill vs Skill", "roll Skill vs Def[Trait]" or "roll Skill vs Difficulty".
+            </text>
+            <text level="2" title="Other Rolls">
+                Other rolls can exist, such as Defence rolls or Trait rolls, but they are similar to the skill tests. Select the dice from the appropriate pool or pools, and after the roll, compare the result to the target, being an opposed roll result or a difficulty level. If the result is higher than the target, the attempt is a success, and it is a failure otherwise.
+            </text>
+            <text level="2" title="Roll Margin">
+                The difference between the roll result and the target is called the Roll Margin (or simply margin), and it determines the extent of the success or failure. It can be positive, negative, or null, and usually the value of the margin is used to apply effects. These effects are described by the source that called for the roll.
+            </text>
+            <text title="Difficulty Level">
+                Difficulty levels are equivalent to the results of pre-made rolls. They indicate the target result to reach when there is no active opposition. The table below indicates a sample of the different levels of difficulty, but the GM can pick any other value between these.
+            </text>
+            <table title="Difficulty Levels">
+                <line><cell type="header">Difficulty</cell> <cell type="header">Level</cell></line>
+                <line><cell>Very Easy</cell>                <cell>5</cell></line>
+                <line><cell>Easy</cell>                     <cell>10</cell></line>
+                <line><cell>Moderate</cell>                 <cell>20</cell></line>
+                <line><cell>Difficult</cell>                <cell>30</cell></line>
+                <line><cell>Very Difficult</cell>           <cell>50</cell></line>
+                <line><cell>Almost Impossible</cell>        <cell>70</cell></line>
+                <line><cell>Beyond Limits</cell>            <cell>100+</cell></line>
+            </table>
+            <text>
+                Note that the difficulty level, or any roll target for that matter, is not necessarily known to the players, the GM can keep it secret and only let the players know whether an attempt was a success or not. This is the case for instance when attacking monsters or NPC's. The GM is encouraged to describe the result of an attempt in a colourful way, such that the player has an idea of how their character performed at a given action.
+            </text>
+            <text title="Using Skills against Adversaries">
+                When a character decides to use a skill to perform an action against an adversary, the way to determine the outcome will depend on the opponent's situation. If the adversary is capable of using a specific skill to counter the character's attempt, they can roll an opposed skill test, and use the result as the target for the character's roll. If no skill test apply, or the defending character decides not to use any, then the defending character uses the appropriate Defence roll as the target. The capacity of using a skill instead of a Defence depends on the situation, the undertaken action or the Ability used. Skills and Abilities describe when they can be used instead of Defences.
+            </text>
+            <text title="Focusing" ref-id="system_focusing">
+                With enough time to spend, a character can focus on their current activity. By doing so, the character puts all their attention to their task, ignoring the rest, relying on their own resources. While focusing, the character can only perform the activity they are focusing on, meaning that they can only perform skill tests linked to that activity. If other rolls were to be made, they are made with disadvantage. The required focus duration is determined by the GM.
+            </text>
+            <text>
+                While focusing, a character can choose one of their traits to draw from while focusing on a task. They can add the chosen trait pool to their skill tests while focusing. The trait pool dice follow all the rules for that pool. Only the tests for the skill the character is focusing on benefit from the trait dice. The chosen trait must apply to the skill test situation, and the amount of trait dice that can be added may be limited by the GM if it not the case. When focusing on a skill that has a level of 0, meaning the character has no knowledge in this area and must rely on their natural talent, they cannot choose a trait, and must use the trait associated with the skill instead.
+            </text>
+            <text title="Consuming Dice" ref-id="system_consuming_dice">
+                Sometimes characters can turn the tide of events by drawing from the inner selves. If a roll uses dice from one or more trait pools, and after seeing the roll results, a player can choose to consume one or more of the dice, up to a maximum equal to the amount of dice from the trait pool. By doing so, the player can replace the selected dice results by their maximum (6 for a D6), which also generates their explosion. However, consuming dice drains the character, and the associated trait pool is reduced by the amount of consumed dice until consumed dice are recovered. This means that all future rolls using that trait pool will only use the remaining dice until the pool is replenished.
+            </text>
+            <text>
+                Every time consuming a die reduces the associated trait pool to 0, the character suffers from the Drained condition until the at least one of the trait dice if recovered.
+            </text>
+            <text>
+                Abilities and other circumstances can also consume dice to activate some special effects. When used this way, the consumed dice only serve as triggers for ability effects and do not alter any roll unless specifically mentioned. They are still consumed and the other rules apply.
+            </text>
+            <text title="Advantage and Disadvantage">
+                In certain circumstances, the character can find themselves in a favourable situation. In this case, they can get the advantage on their skill rolls. To roll with advantage, the player rolls a normal skill test but they can, after seeing the roll result, re-roll any number of the dice with a result of 2 or less. Re-rolled dice can explode if they meet the conditions. If they choose to do so, they must keep the new result.
+            </text>
+            <text>
+                When the character is in an unfavourable situation, they must roll with disadvantage. They proceed in a similar way, but after seeing the roll results, they must re-roll all the dice with a result of 5 or more, preventing dice explosion if any, and keep the new result. Re-rolled dice can still explode if they meet the conditions though.
+            </text>
+            <text>
+                Advantage and disadvantage apply after the roll (including exploding dice), but a player can still choose to consume dice normally after applying the re-rolls. A character cannot be affected by multiple advantages or disadvantages, either you have it, or you do not. If a character is affected by both the advantage and the disadvantage, they roll normally as if they were not affected by any.
+            </text>
+        </chapter>
+        <chapter title="Combat">
+            <text title="The Combat Sequence">
+            </text>
+            <definitions>
+                <definition title="Surprise">
+                    Just before the beginning of the combat, attackers can try to surprise their opponents by attacking them unnoticed. When they try to do so, they must conceal their presence until they attack. The characters must use a skill of the stealth category against the adversaries. The type of roll is determined by the opponents' behaviours. Opponents performing an active search will use a Skill vs Skill roll, while passive opponents will trigger a Skill vs Def[PER] roll. In case of a success, the opponent is affected by the Surprised condition until the end of their next turn.
+                </definition>
+                <definition title="Initiative">
+                    Once the combat begins, every contender must determine their order of initiative, determining when they will act in the round. Every character must roll Reaction. The roll result becomes the character's initiative. That initiative will remain for the whole combat. Note that Reaction is a combination of trait pools and rules for trait pools apply to this role as well.
+                </definition>
+                <definition title="Combat Rounds">
+                    Characters will act in sequence, starting with the highest initiative and counting down to the lowest. That sequence is called a round. When their initiative comes, each character starts their turn. When two characters have the same initiative score, they effectively act at the same time. This means that consequences of their actions, including damage and conditions, are resolved only when both turns have been fully played. During their turn, a character can use their actions slots to perform actions. Some abilities can allow the use of an action slot outside of a character's turn. When a character has no more action slot to spend, or decides not to use them all, their turn ends, and the sequence skips to the next initiative. When the character with the lowest initiative ends their turn, the round ends and a new round begins again with the highest initiative score.
+                </definition>
+            </definitions>
+            <text title="Combat Actions">
+                Characters gain two action slots per round, which they normally can spend only during their own turn. A player can select one action option from the list below for each of their action slots. Abilities can add additional action slots or combat action options, which may be used according to the ability description.
+            </text>
+            <definitions>
+                <definition title="Movement">
+                    You can move up to your movement characteristics during this action. You do not have to use all your movement, you can choose to move less than the maximum. However, you cannot split your movement to take another action in-between. You must first finish your movement action before picking another action. If you have more than one movement methods, you choose which type of movement you want to make, and you can only perform that type of movement during this action.
+                </definition>
+                <definition title="Draw">
+                    You can draw a weapon or an item from its container and have it ready in your hand. You can only use this action if you have a free hand. Focusing on this action does not provide additional benefits.
+                </definition>
+                <definition title="Attack">
+                     If you have a weapon ready in one of your hands, you can perform an attack as described below. You can only perform one attack per action unless specified otherwise. If you are wielding more than one weapon, you choose which hand and weapon will perform the attack. When using a barehanded attack, a character can choose to grapple the target instead of dealing damage, reducing the Roll Margin to 0 and inflicting the Grappled condition his target.
+                </definition>
+                <definition title="Focus">
+                    You can focus on your next action, as described in <reference ref="system_focusing">The CORE D6 System - Focusing</reference>. By doing so, you specify what action you are focusing on, you spend the whole action focusing on the selected trait, and upon GM's approval, your next combat action will benefit from the added trait pool. If your next action is Defence, the trait pool is added to your Physical Defence until the beginning of your next turn. For any other action, any skill check, including attack rolls, that would be required as part of the action can use your selected trait pool.
+                </definition>
+                <definition title="Defence">
+                    You can spend your action putting yourself in a defensive stance, ready to parry or evade incoming attacks. Until the beginning of your next turn, your Physical Defence receives +1BD.
+                </definition>
+                <definition title="Reload">
+                    You can spend your action reloading a weapon or a device. Some weapons or devices require ammunition or charges to operate, and by using this action, you start loading them. Note that some weapons or devices may require more than one Reload action to be fully loaded and ready to be used. Focusing on this action does not provide additional benefits.
+                </definition>
+                <definition title="Use Item">
+                    You can spend your action operating a device within your reach, using a specific item or consuming edible products you are holding in your hand. Complex items specify how they can be interacted with using this action. Some items or devices may require multiple use of this action to be properly operated. In this case, you must use the Focus action before every use of the Use Item action to benefit from the Focus effect. If you fail to do so, the GM will determine whether the Focus can be applied, even partially, or not.
+                </definition>
+                <definition title="Use Skill">
+                    You can spend your action using one of your skills to undertake specific actions or solve specific situations. Depending on the skill used, an opposed skill check may be required. Imposing an opposed skill check to a target does not consume a target's action slot. Some situations may require multiple use of this action to be properly operated. In this case, you must use the Focus action before every use of the Use Skill action to benefit from the Focus effect. If you fail to do so, the GM will determine whether the Focus can be applied, even partially, or not.
+                </definition>
+            </definitions>
+            <text title="Performing a Attack">
+                To perform an attack, a character rolls an appropriate skill test, depending on the method of attack they are using. Unless stated otherwise, a physical attack uses the opponent's Physical Defence as the roll target, and a mental effect uses the Mental Defence. Performing an off-hand attack is done with Disadvantage unless specified otherwise. Using the Focus action before an attack adds the appropriate trait pool to the skill check. If the skill test is successful, the attack hits the target, and damage must now be resolved.
+            </text>
+            <text title="Resolving Damage">
+                To resolve damage, the Roll Margin must be calculated. The margin is the damage that is directly inflicted to the defender. Some Abilities can reduce that damage. The damage taken by the defender is subtracted from the appropriate Health, depending on the attack type.
+            </text>
+            <text title="Injuries">
+                If damage bring a character's Physical Health or Mental Health to 0, the character falls Unconscious, and becomes Injured in the corresponding Health. If a character's Health is brought back to 1 or more, they are not Unconscious anymore, but they remain Injured until a healing effect specifically removes the Injured condition or until they recover.
+            </text>
+            <text title="Combat Situations">
+                When in combat, characteristics of the battlefield and positioning can influence the outcome of a fight. Finding the right spot or neglecting to properly assess a situation can dramatically change the odds of an encounter. 
+            </text>
+            <text level="2" title="Cover">
+                Hiding behind solid material makes a character much more difficult to hit. If the obstacle can hardly be affected by the attack means (such as a wall), if it hides the target (such as bushes), or that damaging the obstacle should be avoided (such as an ally in the way), the character behind it gets a defence increase. In this situation, add the cover modifier or bonus dice to the target's Physical Defence.
+            </text>
+            <table title="Cover">
+                <line><cell type="header">Cover</cell>   <cell type="header">Bonus</cell></line>
+                <line><cell>Quarter Cover</cell>            <cell>+1BD</cell></line>
+                <line><cell>Half Cover</cell>               <cell>+2BD</cell></line>
+                <line><cell>Full Cover</cell>               <cell>+3BD</cell></line>
+                <line><cell>Total Concealment</cell>        <cell>Special</cell></line>
+            </table>
+            <text level="3" title="Total Concealment">
+                A target that is completely hidden behind a protection structure and never reveals any part of their body is consider as having Total Concealment. If the target of the attack is concealed behind material that can be affected by the attack, resolve the attack against the cover's Defence, and apply the damage to it. If the damage brings the concealing structure to 0 Health, use the extra damage as an attack roll against the original target's Defence and resolve it normally. If the target is behind a structure that cannot be affected by the attack, it is considered immune to it.
+            </text>
+            <text level="2" title="Lighting">
+                A location that is not properly lit hinders a character's sight. When trying to see through dim light, a character as Disadvantage on all skill checks involving sight. When trying to see through darkness, a character suffers from the Blinded condition.
+            </text>
+            <text level="2" title="Flanking">
+                A character is flanked when there are enemies threatening the character in melee combat from two opposite sides. While in this situation, the character suffers from the Flanked condition.
+            </text>
+            <text level="2" title="Difficult Terrain">
+                Difficult terrain describe situations where the terrain condition makes it difficult for a character to go though it at normal pace. This includes boulders, marshes, uneven grounds, etc. When going across difficult terrain, a character can move only half as fast. This means that it takes 2 meters of a character's movement score to effectively move 1 meter across the terrain.
+            </text>
+        </chapter>
+        <chapter title="Conditions">
+            <text>
+                Conditions are states that can afflict a character. While a character is afflicted by a condition, the rules of that condition immediately apply. A character can be affected by multiple conditions at the same time. The source inflicting the condition usually provides a duration, ending criteria or circumstances of application. Some conditions can also describe how to end them.
+            </text>
+            <external id="conditions" file="conditions.xml" />
+        </chapter>
+        <chapter title="Resting and Recovering">
+            <text title="Short Rest">
+                During a short rest, characters spend at least around one hour recovering, trying to calm down and tending to their wounds. They cannot fight or perform straining physical or mental activities, or they will lose all the benefits of the rest. If uninterrupted, at the end of the short rest, they can benefit from the following effects.
+            </text>
+            <definitions>
+                <definition title="Restore Consumed Die">
+                    When taking a short rest, a character can restore one of the consumed dice of one of their trait pools. If the trait pool was at 0, thus inflicting the Drained condition, restoring a consumed die from that pool removes that condition. This effect always takes place before all the others, and other effects may again reduce the trait pool to 0, inflicting the Drained condition again.
+                </definition>
+                <definition title="Restore Health">
+                    When taking a short rest, a character can draw from their internal energy to quickly recuperate. The character can consume dice to replenish their  Health. They can consume Constitution dice for Physical Health, or Will dice for Mental Health as they wish. For every consumed die, roll the die (which can explode like any other die) and add the result to the corresponding Health. Note that even if they are consumed, the rolled dice do not automatically result in their maximum. If a trait pool reaches 0 by doing so, the character suffers from the Drained condition, as usual.
+                </definition>
+                <definition title="Spend Experience">
+                    When taking a short rest, a character can purchase the Ability Acquisition option with their Experience Points as many times as they wish, as long as they have enough XP. See the <reference ref="use_experience">Playing the Game - Using Experience</reference> section for more information about Experience.
+                </definition>
+            </definitions>
+            <text title="Long Rest">
+                During a long rest, characters spend at least the equivalent of a night (roughly 8 hours) resting, recovering, sleeping and eating. They can perform light activities such a reading, keeping watch, chatting, and so on. They cannot undertake any tiring activity such a fighting or making physical or mental efforts, or they will lose all the benefits of the rest. If uninterrupted, at the end of the long rest, they can benefit from the following effects.
+            </text>
+            <definitions>
+                <definition title="Recover Consumed Dice">
+                    When taking a long rest, a character can replenish their inner resources. They recover all their consumed dice in all trait pools. This effect always takes place before all the others, and other effects may again reduce the trait pool to 0, inflicting the Drained condition again.
+                </definition>
+                <definition title="Recover Health">
+                    When taking a long rest, a character can take some time tending to their wounds. They recover all their Physical and Mental Health points, and if they suffer from the Drained or Exhausted condition, those conditions are removed.
+                </definition>
+                <definition title="Spend Experience">
+                    When taking a long rest, a character can purchase the Ability Acquisition or the Miraculous Recovery options with their Experience Points as many times as they wish, as long as they have enough XP. See the <reference ref="use_experience">Playing the Game - Using Experience</reference> section for more information about Experience.
+                </definition>
+            </definitions>
+            <text title="Extended Rest">
+                During an extended rest, characters avoid demanding activities for at least a whole day (equivalent to 24 hours), and only perform mundane tasks of daily life, such as cooking, eating, resting, reading, and so on. If they perform any kind of straining activity, including fighting, they will lose all the benefits of the rest. If uninterrupted, at the of the extended rest, they can benefit from the following effects.
+            </text>
+            <definitions>
+                <definition title="Recover Health">
+                    When taking an extended rest, a character can take some time tending to their wounds. They recover all their Physical and Mental Health points, and if they suffer from the Drained or Exhausted condition, those conditions are removed.
+                </definition>
+                <definition title="Recover Injury">
+                    Once per extended rest, an injured character can check whether they recover naturally. If a character is injured in both Healths, they can test once for each. The character can roll Trait vs 15. They use Constitution to recover from physical injuries, and Will for mental injuries. A success to the roll removes the Injured condition in the appropriate Health, a failure indicates that the character has not recovered yet. If the roll fails by 10 or more (meaning the Roll Margin is -10 or less), the character immediately loses a 1 point in the tested trait. This loss is also immediately reflected to the appropriate maximum Health score.
+                </definition>
+                <definition title="Spend Experience">
+                    When taking an extended rest, a character can purchase the Ability Acquisition or the Miraculous Recovery options with their Experience Points as many times as they wish, as long as they have enough XP. A character can also purchase the Change of Occupation option or use the Personal Refocus only once each. See the <reference ref="use_experience">Playing the Game - Using Experience</reference> section for more information about Experience.
+                </definition>
+                <definition title="Recover Consumed Dice">
+                    When taking an extended rest, a character can replenish their inner resources. They recover all their consumed dice in all trait pools. This effect takes place at the end of the rest, after all other rest effects, and it only restores dice that were consumed before the rest. Any die consumed during the same rest cannot be restored this way.
+                </definition>
+            </definitions>
+        </chapter>
+        <chapter title="Using Experience" ref-id="use_experience">
+            <text title="During the Adventure">
+                The following options can be purchased at any time by any character during the adventure, as long as they have enough experience points to spend. Moreover, these options can be purchased to benefit another character than the one effectively spending the experience.
+            </text>
+            <text level="2" title="Inner Forces" value="1 XP">
+                Drawing from their past experiences, the character tries to bend the situation to their best advantage. When purchasing this option, the player selects one of the characters. The next skill check of that character will be made with Advantage.
+            </text>
+            <text level="2" title="A Bit of Luck" value="2 XP">
+                Based on what they learned, a character knows when to push their luck to reach their objectives. When purchasing this option, the player selects a roll that just occurred, which can be any type of roll. The character that attempted the roll must re-roll and keep the second roll to determine the outcome of the action. The first roll is completely ignored as if it never occurred, meaning that consumed dice for the first roll are recovered. The first roll never happened.
+            </text>
+            <text level="2" title="Resources Within" value="2 XP">
+                A character has seen enough to know they have more in them. When purchasing this option, the player selects one of the characters. The selected character can immediately restore all the consumed dice in one of their trait pools.
+            </text>
+            <text level="2" title="A Sign of Destiny" value="5 XP">
+                Sometimes characters are destined to higher deeds, and nothing in their path can stop them. When purchasing this option, the player selects an effect directly affecting a player character. That effect can be ignored or changed in favour of the character. This option can prevent or transform a single effect or event happening to a player character, such as ignoring wounds from a single attack, turn a failed roll into a success, or even prevent a character's death by ignoring the potential cause of death. When turning a failure into a success, the roll results becomes equal to the roll target +10, effectively providing a Roll Margin of +10.
+            </text>
+            <text title="During a Rest and Between Adventures">
+                The following options are only available during a rest, and cannot be selected outside of one. Available options depend on the type of rest. Additionally, any of these options can be purchased outside of adventures, such during a downtime between adventures, or during the Character Creation phase. Only the character spending experience can benefit from these options, they cannot be purchased for other characters.
+            </text>
+            <text level="2" title="Ability Acquisition" value="Variable">
+                A character can acquire a new ability. The cost depends on the chosen ability. To select a new ability, a character must fulfil all the pre-requisites of that ability, and must not match any of its incompatibility criteria. The character immediately benefits from the effects of the new ability.
+            </text>
+            <text level="2" title="Change of Occupation" value="5 XP">
+                A character can decide to change their occupation and start practising in a new field. The player can replace the character's current Occupation with a new one, immediately gaining all the effects of the new one and losing access to the effects of the old one. Already acquired skills and abilities remain unchanged.
+            </text>
+            <text level="2" title="Miraculous Recovery" value="2 XP">
+                An injured character has sometimes gone through so much that they know this one will heal too. By purchasing this option, a character can remove the Injured condition from one of their Health. If a character is injured in both Healths, they must purchase this option once for each injury to fully recover.
+            </text>
+            <text level="2" title="Personal Refocus" value="Variable Gain">
+                An experienced character sometimes knows that ways of the past may not lead to the future they want, and that it is never too late to change. By using this option, a character forgets one Ability they currently have and lose all its benefits, and they regain Experience Points equal to half the purchase cost at the time they purchased that Ability. Forgetting an Ability that is a requirement for other Abilities renders these Abilities inactive, and the character cannot benefit from them. Inactive Abilities cannot be used as requirements for other Abilities, inactivating them in the same way. Inactive Abilities do not grant any Experience Point gain unless this option is selected to effectively forget them. Inactive Abilities become active as soon as their requirements are met again.
+            </text>
+        </chapter>
+    </section>
+    <section title="Character Creation">
+        <chapter title="About Character Creation">
+            
+        </chapter>
+        <chapter title="Creation Steps">
+            <text title="1. Select an Origin">
+                Choose an origin
+            </text>
+            <text title="2. Base Characteristics">
+                Set all your traits to 1 and compute your base characteristics.
+            </text>
+            <text>
+                At the beginning, set your occupation to None. You will be able to purchase one later.
+            </text>
+            <text title="3. Receive Initial Experience">
+                The GM will now grant you initial Experience to reflect what the character lived and went through from their birth till today.
+            </text>
+            <text title="4. Spend Experience">
+                You can now describe your character's life and evolution by spending the initial Experience you received as described in the <reference ref="use_experience">Playing the Game - Using Experience</reference> section. You can use any of the options more than once, as long as you have Experience to spend. Note that you do not have to acquire an Occupation, it can remain None, which means you will get no benefit from having one.
+            </text>
+            <text>
+                You do not have to spend all your initial Experience, any unspent point will remain available to your character after their creation, and will be available for further use during the adventures.
+            </text>
+        </chapter>
+    </section>
+    <section title="Character Options" ref-id="charopts">
+        <chapter title="Origins">
+            <text>
+                The following origins are default options that are available at character creation. They may or may not be available, depending on the CORE Setting you are playing with. They also serve as examples to develop custom origins.
+            </text>
+            <text>
+                The origins are described as follows:
+            </text>
+            <definitions>
+                <definition title="Size">
+                    The average size for this origin from the following categories : Tiny (T), Small (S), Medium (M), Large (L), Huge (H), Gargantuan (G).
+                </definition>
+                <definition title="Base Speed">
+                    The base speed for members of this origin. Together with the character's Speed trait, it defines the character's Movement characteristics.
+                </definition>
+                <definition title="Origin Skills">
+                    These skills appear to be instinctive for the members of this origin, and are therefore much easier to learn. A member of this origin can buy the "Improved Skill" Ability for the listed skills at half the normal price.
+                </definition>
+                <definition title="Origin Abilities">
+                    These Abilities appear to be instinctive for the members of this origin, and are therefore much easier to learn. A member of this origin can buy the listed Abilities at half the normal price.
+                </definition>
+                <definition title="Unique Abilities">
+                    Origins differ from one another in many ways, and each of them demonstrates some unique adaptions or cultural disciplines. These Abilities are unique to this origin, and can only be acquired by members of this origin at the listed price.
+                </definition>
+            </definitions>
+            <external id="origins" file="origins.xml" />
+        </chapter>
+        <chapter title="Occupations">
+            <external id="occupations" file="occupations.xml" />
+        </chapter>
+        <chapter title="Skills">
+            <external id="skills" file="skills.xml" />
+        </chapter>
+        <chapter title="Abilities" ref-id="charopts-abilities">
+            <external id="abilities" file="abilities.xml" />
+        </chapter>
+    </section>
+    <section title="Equipment">
+    </section>
+    <section title="Game Master's Tools">
+    </section>
+    <section title="Character's Sheet">
+        <picture source="character-sheet-1" display="page" />
+        <page-break />
+        <picture source="character-sheet-2" display="page" />
+    </section>
+</book>

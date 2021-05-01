@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="core.xsl"?>
+
+<abilities>
+    <category name="Training">
+        <description>Through training, a character can improve what he is and what he can do.</description>
+        
+        <ability name="Improved Trait" cost="Current Score × 5 in XP" prerequisite="None" multiple="Yes" incompatibility="None">
+            <text>You have trained hard to improve one of your traits. You immediately gain 1 point in the selected Trait.</text>
+            <text>The cost of this ability is equal to the current score in the selected Trait multiplied by 5.</text>
+        </ability>
+        <ability name="Improved Health" cost="1 XP" prerequisite="None" multiple="Yes" incompatibility="None">
+            <text>You have trained hard to improve your health. You immediately gain a D6 or 3 points, you choose, in the selected Health.</text>
+            <text>The rolled D6 cannot explode.</text>
+        </ability>
+        <ability name="Improved Skill" cost="Current Score in XP" prerequisite="None" multiple="Yes" incompatibility="None">
+            <text>You have trained hard to improve one of your skills. You immediately gain a D10 or 5 points, you choose, in the selected Skill.</text>
+            <text>The cost of this ability is equal to the current score in the selected Skill.</text>
+        </ability>
+    </category>
+    <category name="Moves and Attacks">
+        <description></description>
+        <ability name="Ambidexterity" cost="10 XP" prerequisite="None" multiple="No" incompatibility="None">
+            <text>
+                You are trained to use either arm and hand indifferently. When performing an off-hand action, you do not suffer from Disadvantage anymore.
+            </text>
+        </ability>
+        <ability name="Dual Wielder" cost="10 XP" prerequisite="None" multiple="No" incompatibility="None">
+            <text>
+                Your are trained to wield weapons in your off-hand. When taking the Attack combat action to attack with your dominant hand weapon, you can perform one additional attack with your off-hand weapon as part of the action.
+            </text>
+        </ability>
+        <ability name="Quick Draw [Weapon Category]" cost="5 XP" prerequisite="None" multiple="Yes" incompatibility="None">
+            <text>
+                Your are trained to draw your weapon quickly. When acquiring this Ability, select a weapon category. Every time you want to perform an attack with a weapon of that category and you do not have the weapon ready in your hand, you can draw the weapon as part of the Attack combat action. You can select this Ability multiple times, selecting each time a different Weapon Category.
+            </text>
+        </ability>
+        <ability name="Quick Reload [Weapon Category]" cost="5 XP" prerequisite="None" multiple="No" incompatibility="None">
+            <text>
+                Your are trained to reload your weapon quickly. When acquiring this Ability, select a weapon category. Every time you want to reload a weapon of that category, the amount of Reload combat actions required to fully reload the weapons is reduced by 1. Reducing that amount to 0 implies that the weapon can be fully reloaded as part of the Attack combat action.
+            </text>
+        </ability>
+    </category>
+    <category name="Charisma and Expression">
+        <description></description>
+        <ability name="Words of Strength" cost="10 XP" prerequisite="None" multiple="No" incompatibility="None">
+            <text>
+                You know the words to motivate your group and help them draw from their inner resources. ...
+            </text>
+        </ability>
+    </category>
+    <category name="Health and Safety">
+        <description></description>
+        <ability name="First Aid" cost="10 XP" prerequisite="None" multiple="No" incompatibility="No">
+            <text>
+                Your knowledge of medicine allows you to provide an emergency response to cure the wounded. Once per short rest, you can select another character or yourself. Roll a Medicine skill test using the chosen character's current Physical Health score as the Difficulty Level. In case of success, the chosen character recovers a D10 points in Physical Health. Each Success Level allows you to roll an additional die, and then pick the best one. A Great Success allows you keep an additional die if there is any available. A Great Failure inflicts a D10 points of physical damage instead.
+            </text>
+        </ability>
+    </category>
+</abilities>
+

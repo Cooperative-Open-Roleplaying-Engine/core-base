@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="core.xsl"?>
+
+<skills>
+    <category name="Combat">
+        <description>Combat skills are used during combat to make use of weapons or to understand the combat situation.</description>
+        <skill name="Artillery" trait="INT">
+            <text>
+                This skill describes how well a characters operates a piece or artillery like a fixed cannon, a mobile artillery gun or a tank gun. This includes the ability to load ammunition, point to a target, and fire the gun. Selecting a target and computing the coordinates is not covered by this skill but by the appropriate Science skill.
+            </text>
+        </skill>      
+        <skill name="Melee Combat [Weapon Category]" trait="STR">
+            <text>Description</text>
+            <list title="Melee Weapon Categories" sorted="yes">
+                <item>Swords</item>
+                <item>Hammers and Axes</item>
+                <item>Sabres</item>
+                <item>Simple Weapons</item>
+                <item>Bare Hands</item>
+                <item>Pole Arms</item>
+                <item>Duel Weapons</item>
+            </list>
+        </skill>
+        <skill name="Ranged Combat [Weapon Category]" trait="AGI">
+            <list title="Ranged Weapon Categories" sorted="yes">
+                <item>Bows</item>
+                <item>Crossbows</item>
+                <item>Thrown Weapons</item>
+                <item>Hand Weapons</item>
+                <item>Manual Rifles</item>
+                <item>Automatic Rifles</item>
+                <item>Heavy Weapons</item>
+            </list>
+        </skill>
+        <skill name="Tactics" trait="INT">
+            <text>
+                This skill describes how well a character understands a combat situation and how they can influence the flow of events to benefit to their party.
+            </text>
+        </skill>  
+    </category>
+    <category name="Outdoor">
+        <skill name="Tracking" trait="PER">
+        </skill>
+        <skill name="Survival" trait="INT">
+        </skill>
+        <skill name="Observation" trait="PER">
+        </skill>
+        <skill name="Orientation" trait="PER">
+        </skill>
+    </category>
+    <category name="Physical">
+        <skill name="Acrobatics" trait="AGI">
+        </skill>
+        <skill name="Athletics" trait="STR">
+        </skill>
+        <skill name="Climbing" trait="AGI">
+        </skill>
+        <skill name="Swimming" trait="AGI">
+        </skill>
+    </category>
+    <category name="Social">
+        <skill name="Insight" trait="PER">
+        </skill>
+        <skill name="Persuasion" trait="PRE">
+        </skill>
+        <skill name="Deception" trait="PRE">
+        </skill>
+        <skill name="Intimidation" trait="PRE">
+        </skill>
+        <skill name="Performance" trait="PRE">
+        </skill>
+        <skill name="Investigation" trait="INT">
+        </skill>
+    </category>
+    <category name="Knowledge">
+        <skill name="Language" trait="INT">
+        </skill>
+        <skill name="Engineering" trait="INT">
+        </skill>
+        <skill name="Science" trait="INT">
+        </skill>
+        <skill name="Strategy" trait="INT">
+        </skill>
+        <skill name="History" trait="INT">
+        </skill>
+        <skill name="Ciphers" trait="INT">
+        </skill>
+    </category>
+    <category name="Technical">
+        <skill name="Driving" trait="AGI">
+        </skill>
+        <skill name="Demolition" trait="DEX">
+        </skill>
+        <skill name="Mechanics" trait="DEX">
+        </skill>
+        <skill name="Forgery" trait="DEX">
+        </skill>
+        <skill name="Electronics" trait="DEX">
+        </skill>
+        <skill name="Electrics" trait="DEX">
+        </skill>
+        <skill name="Craft" trait="DEX">
+        </skill>
+        <skill name="Trapping" trait="DEX">
+        </skill>
+        <skill name="Handiwork" trait="DEX">
+        </skill>
+        <skill name="Torture" trait="DEX">
+        </skill>
+        <skill name="Animal Handling" trait="PRE">
+        </skill>
+        <skill name="Transmission" trait="INT">
+        </skill>
+    </category>
+    <category name="Rogue">
+        <skill name="Stealth" trait="AGI">
+        </skill>
+        <skill name="Hiding" trait="AGI">
+        </skill>
+        <skill name="Sleight of Hand" trait="DEX">
+        </skill>
+        <skill name="Escape Artist" trait="AGI">
+        </skill>
+        <skill name="Disguise" trait="INT">
+        </skill>
+    </category>
+    <category name="Health and Safety">
+        <skill name="First Aid" trait="INT">
+        </skill>
+        <skill name="Medicine" trait="INT">
+        </skill>
+        <skill name="Surgery" trait="DEX">
+        </skill>
+        <skill name="Psychology" trait="PRE">
+        </skill>
+        <skill name="Psychiatry" trait="WIL">
+        </skill>
+    </category>
+</skills> 

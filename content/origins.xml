@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="core.xsl"?>
+
+<origins>
+    <origin name="Human">
+        <description>
+            <text>Humans are the most common species in the multiverse. They are versatile and adaptive.</text>
+        </description>
+        <speed>10</speed>
+        <size>M</size>
+        <skills>
+            <skill name="Insight" />
+            <skill name="Athletics" />
+        </skills>
+        <abilities>
+            <common>
+                <ability name="Improved Trait" />
+                <ability name="Improve Health" />
+            </common>
+            <unique>
+                <ability name="Human Versatility" cost="Free" prerequisite="Origin: Human" multiple="No" incompatibility="None">
+                    Humans are particularly versatile, and they adapt easily. For them, the "Change of Occupation" Experience option costs 2 XP only.
+                </ability>
+            </unique>
+        </abilities>
+    </origin>
+</origins> 

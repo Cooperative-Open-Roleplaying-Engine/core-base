@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+html {
+    --bg-color-dark: #111111 ;
+    --bg-color-light: #EEEEEE ;
+    --fg-color-light: #FFFFFF ;
+    --fg-color-dark: #111111;
+    font-size: 9pt;
+    color: var(--fg-color-dark) ;
+    font-family: "Forum", serif;
+}
+body {
+    background-color: #555555;
+    margin: 0;
+    padding: 0;
+    counter-reset: pages;
+}
+
+* { box-sizing: border-box; }
+
+h1 { bookmark-level: 1 ; }
+h2 { bookmark-level: 2 ; }
+h3 { bookmark-level: 3 ; }
+h4 { bookmark-level: 4 ; }
+/*********************************************************/
+div.page {
+    width: 210mm;
+    height: 297mm;
+    margin-top: 2mm;
+    margin-bottom: 2mm;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 2mm black;
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+    columns: 2;
+    column-fill: auto;
+    column-gap: 2em;
+    text-align:justify;
+    padding: 1cm;
+    padding-bottom: 2cm;
+}
+div.page::after {
+    content: attr(data-pagenumber);
+    position: absolute;
+    bottom: -1px;
+    left: 0cm;
+    width:100%;
+    height: 0.69cm;
+    text-align: center;
+    color: var(--fg-color-light);
+    background-color: black;
+    font-weight: bold;
+    display:block;
+    font-size: 0.4cm;
+    padding-top: 0.31cm;
+    z-index: 99;
+}
+nav div.page::after,
+header div.page::after,
+section div.page:first-child::after {
+    visibility:hidden;
+}
+/*********************************************************/
+header h1 {
+    font-weight: bold;
+    text-align: right;
+    position: absolute;
+    top: 10cm;
+    right: 2cm;
+    font-size: 2cm;
+}
+header h2 {
+    font-weight: bold;
+    text-align: right;
+    position: absolute;
+    top: 13cm;
+    right: 2cm;
+    font-size: 1cm;
+    font-variant: small-caps;
+    bookmark-level: none;
+}
+/*********************************************************/
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1rem;
+    line-height: 0.5cm;
+}
+nav h1 {
+    column-span: all;
+}
+nav a {
+    text-decoration: none;
+    color: var(--bg-color-dark);
+    display: block;
+    line-height: 1.5em;
+}
+nav a::after {
+    content: attr(data-pageref) ;
+    display: block;
+    float: right;
+}
+nav a[data-level="1"] {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.1em;
+}
+nav a[data-level="3"] {
+    margin-left: 1em;
+}
+nav a[data-level="4"] {
+    margin-left: 2em;
+    font-size: 90%;
+}
+/*********************************************************/
+footer nav h2 {
+    font-size: 1em;
+    background-color: var(--bg-color-light);
+    padding: 0.1em;
+}
+/*********************************************************/
+section div.page h1 {
+    position: absolute;
+    top: 12cm;
+    left: 2cm;
+    right: 2cm;
+    text-align: right;
+    border-bottom: 1px solid;
+    border-color: var(--bg-color-dark) ; 
+    font-size: 1.5cm;
+    font-variant: small-caps;
+}
+section div.page h2 {
+    font-variant: small-caps;
+    background-color: var(--bg-color-dark);
+    color: var(--fg-color-light);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding-left: 2mm;
+    padding-top: 0.05em;
+    break-after: avoid;
+}
+section div.page h3 {
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.2rem;
+    break-after: avoid;
+}
+section div.page h4 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+}
+h5 {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.2em;
+    font-size: 1rem;
+}
+h5[data-abbr]::after {
+    content: "["attr(data-abbr)"]" ;
+    display: block;
+    float:right;
+    letter-spacing: 0.1em;
+    font-size: 80%;
+    line-height: 1rem;
+    padding-top: 0.1em;
+}
+h5 + p {
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+}
+/*********************************************************/
+section div.page *[data-value]::after {
+    content: attr(data-value) ;
+    float:right;
+    display:block;
+    letter-spacing: 0.1em;
+}
+p,
+section div.page p,
+section div.page table {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+section div.page > *:last-child {
+    margin-bottom: 0;
+}
+section div.page > *:first-child,
+section div.page > *:first-child > *:first-child {
+    margin-top: 0;
+}
+/*********************************************************/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 60%;
+    max-width: 100%;
+    font-size: 1rem;
+}
+table th {
+    text-align: left;
+}
+/*********************************************************/
+img.page {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+/*********************************************************/
+article {
+    break-inside: avoid ;
+}
+/*********************************************************/
+article.ability h4,
+article.origin h4,
+article.occupation h4,
+article.skill h4 {
+    margin: 0;
+    margin-bottom: 0.5em !important;
+    background-color: var(--bg-color-light);
+    padding: 1mm;
+    font-size: 1rem !important;
+}
+article.skill h5 {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    border-bottom: 1px solid var(--bg-color-light);
+}
+article.ability table,
+article.origin table,
+article.occupation table {
+    text-align:left;
+    font-size: 80%;
+    margin: 0;
+}
+article.origin div {
+    display: flex;
+    margin-bottom: 0.5em;
+}
+article.origin div span {
+    flex-grow: 2 ;
+    flex-shrink: 1 ;
+    display: block ;
+    line-height: 4mm;
+}
+article.origin div span.label {
+    font-weight: bold ;
+    flex-grow: 1 ;
+}
+article.skill ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 1em;
+    font-weight: bold;
+    list-style-position: inside;
+}
+article.skill ul li {
+    margin: 0 ;
+    line-height: 150%;
+}
+/*********************************************************/
+cite a {
+    text-decoration: none;
+    color: var(--fg-color-dark) ;
+}

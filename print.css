@@ -1,0 +1,43 @@
+@media print {
+    @page {
+        size: A4;
+        margin: 0;
+        padding: 0;
+    }
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+    html,body {
+        background-color: #FFFFFF;
+    }
+    header,
+    nav,
+	section,
+    div.page {
+        border: 0;
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+    }
+    div.page {
+        page-break-after: always;
+		border: 1px solid white;
+		border-bottom: 1px solid black;
+	}
+	nav div.page,
+	header div.page,
+	section div.page:first-child {
+		border-bottom: 1px solid white;
+    }
+	div.page::after {
+		left: -1px;
+		right: -1px;
+		width: auto;
+	}
+	img.page {
+		left: -1px ;
+		top: -1px;
+		height: calc(100% + 2px);
+		width: calc(100% + 2px);
+	}
+}
