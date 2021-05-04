@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="core.xsl"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./transform/html.xsl"?>
 
 <book>
     <data>
@@ -485,7 +485,7 @@
     </section>
     <section title="Game Master's Tools">
     </section>
-    <section title="Character's Sheet">
+    <section title="Character's Sheet" type="fullpage">
         <picture source="character-sheet-1" display="page" />
         <page-break />
         <picture source="character-sheet-2" display="page" />

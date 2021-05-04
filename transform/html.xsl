@@ -5,7 +5,7 @@
 <xsl:output method="html" />
 <xsl:key name="titles" match="*" use="@ref-id"/>
 <!-- **************************************************** -->
-<xsl:variable name="contentBase">./content/</xsl:variable>
+<xsl:variable name="contentBase">../content/</xsl:variable>
 <!-- **************************************************** -->
 <xsl:template match="external">
     <xsl:apply-templates select="document(concat($contentBase,@file))" />
@@ -15,9 +15,9 @@
     <html>
         <head>
             <title><xsl:value-of select="data/title"/> - <xsl:value-of select="data/subtitle"/></title>
-            <script src="core.js" />
-            <link rel="stylesheet" href="style.css" />
-            <link rel="stylesheet" href="print.css" />
+            <script src="./published/html/resources/core.js" />
+            <link rel="stylesheet" href="./published/html/resources/style.css" />
+            <link rel="stylesheet" href="./published/html/resources/print.css" />
         </head>
         <body>
             <xsl:apply-templates select="data"/>

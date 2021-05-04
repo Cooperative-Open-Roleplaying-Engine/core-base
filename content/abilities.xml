@@ -3,7 +3,7 @@
 
 <abilities>
     <category name="Training">
-        <description>Through training, a character can improve what he is and what he can do.</description>
+        <description>Through training, characters can improve what they are and what they can do.</description>
         
         <ability name="Improved Trait" cost="Current Score × 5 in XP" prerequisite="None" multiple="Yes" incompatibility="None">
             <text>You have trained hard to improve one of your traits. You immediately gain 1 point in the selected Trait.</text>
