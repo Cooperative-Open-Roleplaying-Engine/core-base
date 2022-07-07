@@ -272,18 +272,21 @@
             <text title="Combat Actions">
                 Characters gain two action slots per round, which they normally can spend only during their own turn. A player can select one action option from the list below for each of their action slots. Abilities can add additional action slots or combat action options, which may be used according to the ability description.
             </text>
+			<text>
+				Characters can select the same action options multiple times to fill their different action slots. However, any additional use of an action option after the first one in the same combat round adds a cumulative -1D penalty to any roll implied by this action.
+			</text>
             <definitions>
                 <definition title="Movement">
                     You can move up to your movement characteristics during this action. You do not have to use all your movement, you can choose to move less than the maximum. However, you cannot split your movement to take another action in-between. You must first finish your movement action before picking another action. If you have more than one movement methods, you choose which type of movement you want to make, and you can only perform that type of movement during this action.
                 </definition>
-                <definition title="Draw">
-                    You can draw a weapon or an item from its container and have it ready in your hand. You can only use this action if you have a free hand. Focusing on this action does not provide additional benefits.
+                <definition title="Draw/Sheathe">
+                    You can draw a weapon or an item from its container and have it ready in your hand. You can only use this action if you have a free hand. Alternatively you can sheathe a weapon or stow away an item into a container. Focusing on this action does not provide additional benefits.
                 </definition>
                 <definition title="Attack">
                      If you have a weapon ready in one of your hands, you can perform an attack as described below. You can only perform one attack per action unless specified otherwise. If you are wielding more than one weapon, you choose which hand and weapon will perform the attack. When using a barehanded attack, a character can choose to grapple the target instead of dealing damage, reducing the Roll Margin to 0 and inflicting the Grappled condition his target.
                 </definition>
                 <definition title="Focus">
-                    You can focus on your next action, as described in <reference ref="system_focusing">The CORE D6 System - Focusing</reference>. By doing so, you specify what action you are focusing on, you spend the whole action focusing on the selected trait, and upon GM's approval, your next combat action will benefit from the added trait pool. If your next action is Defence, the trait pool is added to your Physical Defence until the beginning of your next turn. For any other action, any skill check, including attack rolls, that would be required as part of the action can use your selected trait pool.
+                    You can focus on your next action, as described in <reference ref="system_focusing">The CORE D6 System - Focusing</reference>. By doing so, you specify what action you are focusing on, you spend the whole action focusing on the selected trait, and upon GM's approval, your next combat action will benefit from the added trait pool. If your next action is Defence, the trait pool is added to your Physical Defence until the beginning of your next turn. For any other action, any skill check, including attack rolls, that would be required as part of the action, you can use your selected trait pool.
                 </definition>
                 <definition title="Defence">
                     You can spend your action putting yourself in a defensive stance, ready to parry or evade incoming attacks. Until the beginning of your next turn, your Physical Defence receives +1BD.
@@ -297,7 +300,13 @@
                 <definition title="Use Skill">
                     You can spend your action using one of your skills to undertake specific actions or solve specific situations. Depending on the skill used, an opposed skill check may be required. Imposing an opposed skill check to a target does not consume a target's action slot. Some situations may require multiple use of this action to be properly operated. In this case, you must use the Focus action before every use of the Use Skill action to benefit from the Focus effect. If you fail to do so, the GM will determine whether the Focus can be applied, even partially, or not.
                 </definition>
+				<definition title="Prepare an Action">
+					You can spend your action waiting for a specific event to happen, and then react to it. Define a specific triggering event, and the action option you intend to use when the event occurs. Before the beginning of your next turn, if the event triggers, you can use a combat reaction to perform the previously selected reactive action. If the event does not occur before the beginning of your next turn, the remaining action slots are lost. The actions slots used by this action option and the reaction are two different slots. Focusing on this action allows the subsequent reaction to benefit from the Focus effect.
+				</definition>
             </definitions>
+			<text title="Combat Reactions">
+				In some circumstances, a character can be allowed to take a combat reaction. A reaction is an action taken outside of the character's turn. In order to be able to take a reaction, a character must have an unused action slot available at the time the reaction occurs. Using a reaction effectively uses that action slot. The list of available action options and the potential modifiers are described by the ability granting the reaction. Penalties due to using the same action option multiple times in a round also apply to reactions, as they are effectively normal actions occurring outside the standard turn. Reactions always occur right after the triggering event.
+			</text>
             <text title="Performing a Attack">
                 To perform an attack, a character rolls an appropriate skill test, depending on the method of attack they are using. Unless stated otherwise, a physical attack uses the opponent's Physical Defence as the roll target, and a mental effect uses the Mental Defence. Performing an off-hand attack is done with Disadvantage unless specified otherwise. Using the Focus action before an attack adds the appropriate trait pool to the skill check. If the skill test is successful, the attack hits the target, and damage must now be resolved.
             </text>
@@ -332,6 +341,15 @@
             <text level="2" title="Difficult Terrain">
                 Difficult terrain describe situations where the terrain condition makes it difficult for a character to go though it at normal pace. This includes boulders, marshes, uneven grounds, etc. When going across difficult terrain, a character can move only half as fast. This means that it takes 2 meters of a character's movement score to effectively move 1 meter across the terrain.
             </text>
+			<text title="Long Actions and Interruption">
+				Some action options may require multiple actions slots to complete. These long actions may take several actions slots in a character's turn, or even spread over multiple turns. Unless stated otherwise, long actions requiring multiple slots can be spread over the available slots and over one or several turns as the character's sees fit. The only restriction is that at least one action slot is used during each of the character's turn to sustain the effort of this action. The results of a long action only becomes effective when the last action slot required for its use is spent.
+			</text>
+			<text level="2" title="Interrupting an Action">
+				If a character decides not to spend an action slot sustaining the action during their turn, or if they are not able to do so, the action is interrupted with no effect. If resources were involved in this action, they are still processed as if the action concluded successfully, being potentially consumed, altered or lost, even though the action got interrupted.
+			</text>
+			<text>
+				Some circumstances might also interrupt a long action, such as taking damage or difficult operating conditions. In such a case, the character must succeed an appropriate Skill Test against a difficulty defined by the circumstances every time they are hindered by them. The Skill to use is defined by the action being undertaken or by the Ability being used. Every time a character takes damage while performing a long action, the character must succeed a Skill Test against the amount of damage taken. For adversary conditions, the difficulty level is set by the GM, as well as the periodicity for the test. Spending one action slot during the character's turn focusing on the long action allows to use the Focus benefits for the Skill Test against the interruption. If a Skill Test fails, the action is interrupted as described above.
+			</text>
         </chapter>
         <chapter title="Conditions">
             <text>
