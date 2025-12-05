@@ -1,3 +1,160 @@
 :root {
-    background-color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 11pt;
+    background-color: #555555;
+
+    *[title]::before {
+        content: attr(title);
+        display: block;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+
+    @media print {
+        background-color: white;
+
+    }
+}
+
+body {
+    width: 50rem;
+    margin-inline: auto;
+    margin-block: 0;
+    padding: 2rem;
+    background-color: white;
+}
+
+header {
+    text-align: right;
+    margin-block-start: 12lh;
+    padding: 0;
+    margin-inline: -2rem;
+
+    h1 {
+        font-size: 6rem;
+        font-weight: normal;
+        margin: 0;
+        padding-inline: 5rem;
+        background-color: black;
+        color: white;
+    }
+
+    p {
+        font-size: 2rem;
+        font-variant: small-caps;
+        margin: 0;
+        padding-inline: 5rem;
+    }
+}
+
+section#data {
+    @media print {
+        columns: unset;
+        break-before: avoid-page;
+    }
+
+    [title="Contributors"] {
+        display: block;
+        padding-inline: 0;
+
+        li {
+            display: inline;
+
+            &:not(:last-child)::after {
+                content: ","
+            }
+        }
+    }
+}
+
+section {
+    margin-block-start: 10lh;
+
+    @media print {
+        columns: 2;
+        column-fill: auto;
+        break-before: page;
+    }
+
+    h2 {
+        margin-block: 1lh;
+        font-size: 3rem;
+        font-variant: small-caps;
+        font-weight: normal;
+        text-align: right;
+        border-bottom: 1px solid currentColor;
+
+        @media print {
+            column-span: all;
+            margin-block-start: 0;
+        }
+    }
+
+    article {
+        margin-block: 3lh;
+
+        &:first-of-type {
+            margin-block-start: 0;
+        }
+
+        h3 {
+            background-color: black;
+            color: white;
+            font-variant: small-caps;
+            font-weight: normal;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            margin-block-start: 0;
+            margin-block-end: 1lh;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-block-start: 1lh;
+            margin-block-end: 0.5lh;
+        }
+
+        h5 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-block-start: 1lh;
+            margin-block-end: 0.3lh;
+        }
+
+        p {
+            margin-block: 0;
+
+            +p {
+                margin-block-start: 1lh;
+            }
+        }
+
+        dl {}
+
+        dt {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            margin-block-start: 1lh;
+            margin-block-end: 0.5lh;
+            font-size: 1rem;
+
+            abbr::before {
+                content: "[";
+            }
+
+            abbr::after {
+                content: "]";
+            }
+        }
+
+        a[href*="#"] {
+            text-decoration: none;
+            color: currentColor;
+            font-style: italic;
+        }
+    }
+
+
 }
