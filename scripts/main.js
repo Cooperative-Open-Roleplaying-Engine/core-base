@@ -39,8 +39,8 @@ async function loadOriginsFromDataFile() {
 
     data.sort((a, b) => a.name.localeCompare(b.name));
 
-    container = document.querySelector("#charopts_origins");
-    template = document.querySelector("#origins_template");
+    const container = document.querySelector("#charopts_origins");
+    const template = document.querySelector("#origins_template");
     data.forEach(item => {
         const clone = document.importNode(template.content, true);
         clone.querySelector("h4").textContent = item.name;
@@ -75,7 +75,7 @@ async function loadOriginsFromDataFile() {
 }
 
 function populateAbilitiesFromTemplate(abilities, container) {
-    template = document.querySelector("#ability_template");
+    const template = document.querySelector("#ability_template");
     abilities.sort((a, b) => a.name.localeCompare(b.name));
     abilities.forEach(item => {
         const clone = document.importNode(template.content, true);
@@ -97,8 +97,8 @@ async function loadOccupationsFromDataFile() {
 
     data.sort((a, b) => a.name.localeCompare(b.name));
 
-    container = document.querySelector("#charopts_occupations");
-    template = document.querySelector("#occupations_categories_template");
+    const container = document.querySelector("#charopts_occupations");
+    const template = document.querySelector("#occupations_categories_template");
     data.forEach(item => {
         const clone = document.importNode(template.content, true);
         clone.querySelector("h4").textContent = item.name;
@@ -110,7 +110,7 @@ async function loadOccupationsFromDataFile() {
 
 
 function populateOccupationsFromTemplate(occupations, container) {
-    template = document.querySelector("#occupations_template");
+    const template = document.querySelector("#occupations_template");
     occupations.sort((a, b) => a.name.localeCompare(b.name));
     occupations.forEach(item => {
         const clone = document.importNode(template.content, true);
@@ -127,9 +127,10 @@ async function loadSkillsFromDataFile() {
 
     data.sort((a, b) => a.name.localeCompare(b.name));
 
-    container = document.querySelector("#charopts_skills");
-    template = document.querySelector("#skills_categories_template");
+    const container = document.querySelector("#charopts_skills");
+    const template = document.querySelector("#skills_categories_template");
     data.forEach(item => {
+        console.log(item)
         const clone = document.importNode(template.content, true);
         clone.querySelector("h4").textContent = item.name;
         clone.querySelector("p").textContent = item.description;
@@ -139,7 +140,7 @@ async function loadSkillsFromDataFile() {
 }
 
 function populateSkillsFromTemplate(skills, container) {
-    template = document.querySelector("#skills_template");
+    const template = document.querySelector("#skills_template");
     skills.sort((a, b) => a.name.localeCompare(b.name));
     skills.forEach(item => {
         const clone = document.importNode(template.content, true);

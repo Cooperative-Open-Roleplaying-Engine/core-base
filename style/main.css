@@ -220,5 +220,10 @@ section {
         }
     }
 
-
+    img {
+        display: block;
+        max-width: 100%;
+        column-span: all;
+        break-before: page;
+    }
 }

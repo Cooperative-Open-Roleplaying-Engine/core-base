@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Training",
+        "description": "Through training, characters can improve what they are and what they can do.",
+        "abilities": [
+            {
+                "name": "Improved Trait",
+                "cost": "Current Score × 5 in XP",
+                "requires": "None",
+                "multiple": "Yes",
+                "incompatibility": "None",
+                "description": "You have trained hard to improve one of your traits. You immediately gain 1 point in the selected Trait. The cost of this ability is equal to the current score in the selected Trait multiplied by 5."
+            },
+            {
+                "name": "Improved Health",
+                "cost": "1 XP",
+                "requires": "None",
+                "multiple": "Yes",
+                "incompatibility": "None",
+                "description": "You have trained hard to improve your health. You immediately gain a D6 or 3 points, you choose, in the selected Health. The rolled D6 cannot explode."
+            },
+            {
+                "name": "Improved Skill",
+                "cost": "Current Score in XP",
+                "requires": "None",
+                "multiple": "Yes",
+                "incompatibility": "None",
+                "description": "You have trained hard to improve one of your skills. You immediately gain a D10 or 5 points, you choose, in the selected Skill. The cost of this ability is equal to the current score in the selected Skill."
+            }
+        ]
+    },
+    {
+        "name": "Moves and Attacks",
+        "description": "",
+        "abilities": [
+            {
+                "name": "Ambidexterity",
+                "cost": "10 XP",
+                "requires": "None",
+                "multiple": "No",
+                "incompatibility": "None",
+                "description": "You are trained to use either arm and hand indifferently. When performing an off-hand action, you do not suffer from Disadvantage anymore."
+            },
+            {
+                "name": "Dual Wielder",
+                "cost": "10 XP",
+                "requires": "None",
+                "multiple": "No",
+                "incompatibility": "None",
+                "description": "Your are trained to wield weapons in your off-hand. When taking the Attack combat action to attack with your dominant hand weapon, you can perform one additional attack with your off-hand weapon as part of the action."
+            },
+            {
+                "name": "Quick Draw [Weapon Category]",
+                "cost": "5 XP",
+                "requires": "None",
+                "multiple": "Yes",
+                "incompatibility": "None",
+                "description": "Your are trained to draw your weapon quickly. When acquiring this Ability, select a weapon category. Every time you want to perform an attack with a weapon of that category and you do not have the weapon ready in your hand, you can draw the weapon as part of the Attack combat action. You can select this Ability multiple times, selecting each time a different Weapon Category."
+            },
+            {
+                "name": "Quick Reload [Weapon Category]",
+                "cost": "5 XP",
+                "requires": "None",
+                "multiple": "Yes",
+                "incompatibility": "None",
+                "description": "Your are trained to reload your weapon quickly. When acquiring this Ability, select a weapon category. Every time you want to reload a weapon of that category, the amount of Reload combat actions required to fully reload the weapons is reduced by 1. Reducing that amount to 0 implies that the weapon can be fully reloaded as part of the Attack combat action."
+            }
+        ]
+    },
+    {
+        "name": "Charisma and Expression",
+        "description": "",
+        "abilities": [
+            {
+                "name": "Words of Strength",
+                "cost": "10 XP",
+                "requires": "None",
+                "multiple": "No",
+                "incompatibility": "None",
+                "description": "You know the words to motivate your group and help them draw from their inner resources. ..."
+            }
+        ]
+    },
+    {
+        "name": "Health and Safety",
+        "description": "",
+        "abilities": [
+            {
+                "name": "First Aid",
+                "cost": "10 XP",
+                "requires": "None",
+                "multiple": "No",
+                "incompatibility": "None",
+                "description": "Your knowledge of medicine allows you to provide an emergency response to cure the wounded. Once per short rest, you can select another character or yourself. Roll a Medicine skill test using the chosen character's current Physical Health score as the Difficulty Level. In case of success, the chosen character recovers a D10 points in Physical Health. Each Success Level allows you to roll an additional die, and then pick the best one. A Great Success allows you keep an additional die if there is any available. A Great Failure inflicts a D10 points of physical damage instead."
+            }
+        ]
+    }
+]
