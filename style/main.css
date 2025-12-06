@@ -67,6 +67,21 @@ section#data {
     }
 }
 
+section#toc {
+    columns: 2;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
 section {
     margin-block-start: 10lh;
 

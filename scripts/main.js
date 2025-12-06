@@ -6,6 +6,19 @@ function init() {
     loadOriginsFromDataFile();
     loadOccupationsFromDataFile();
     loadSkillsFromDataFile();
+    loadAbilitiesFromDataFile();
+    generateTableOfContent();
+}
+
+async function generateTableOfContent() {
+    const headers = document.querySelectorAll(":is(h2, h3, h4, h5)");
+    const toc = document.querySelector("#toc ul");
+    template = document.querySelector("#toc_template");
+    headers.forEach(item => {
+        const clone = document.importNode(template.content, true);
+        clone.querySelector("a").textContent = item.childNodes[0].textContent;
+        toc.appendChild(clone);
+    })
 }
 
 async function loadDataFile(datafile) {
@@ -17,13 +30,13 @@ async function loadDataFile(datafile) {
 
 async function loadConditionsFromDataFile() {
     //datafile = "./data/conditions.json";
-    datafile = "https://cooperative-open-roleplaying-engine.github.io/core-base/data/conditions.json"
+    const datafile = "https://cooperative-open-roleplaying-engine.github.io/core-base/data/conditions.json"
     const data = await loadDataFile(datafile);
 
     data.sort((a, b) => a.name.localeCompare(b.name));
 
-    container = document.querySelector("#conditions");
-    template = document.querySelector("#conditions_template");
+    const container = document.querySelector("#conditions");
+    const template = document.querySelector("#conditions_template");
     data.forEach(item => {
         const clone = document.importNode(template.content, true);
         clone.querySelector("dt").textContent = item.name;
@@ -34,7 +47,7 @@ async function loadConditionsFromDataFile() {
 
 async function loadOriginsFromDataFile() {
     //datafile = "./data/origins.json";
-    datafile = "https://cooperative-open-roleplaying-engine.github.io/core-base/data/origins.json"
+    const datafile = "https://cooperative-open-roleplaying-engine.github.io/core-base/data/origins.json"
     const data = await loadDataFile(datafile);
 
     data.sort((a, b) => a.name.localeCompare(b.name));
@@ -92,7 +105,7 @@ function populateAbilitiesFromTemplate(abilities, container) {
 
 async function loadOccupationsFromDataFile() {
     //datafile = "./data/conditions.json";
-    datafile = "https://cooperative-open-roleplaying-engine.github.io/core-base/data/occupations.json"
+    const datafile = "https://cooperative-open-roleplaying-engine.github.io/core-base/data/occupations.json"
     const data = await loadDataFile(datafile);
 
     data.sort((a, b) => a.name.localeCompare(b.name));
@@ -122,7 +135,7 @@ function populateOccupationsFromTemplate(occupations, container) {
 
 async function loadSkillsFromDataFile() {
     //datafile = "./data/conditions.json";
-    datafile = "https://cooperative-open-roleplaying-engine.github.io/core-base/data/skills.json"
+    const datafile = "https://cooperative-open-roleplaying-engine.github.io/core-base/data/skills.json"
     const data = await loadDataFile(datafile);
 
     data.sort((a, b) => a.name.localeCompare(b.name));
@@ -130,7 +143,6 @@ async function loadSkillsFromDataFile() {
     const container = document.querySelector("#charopts_skills");
     const template = document.querySelector("#skills_categories_template");
     data.forEach(item => {
-        console.log(item)
         const clone = document.importNode(template.content, true);
         clone.querySelector("h4").textContent = item.name;
         clone.querySelector("p").textContent = item.description;
@@ -158,4 +170,22 @@ function populateSkillsFromTemplate(skills, container) {
         }
         container.appendChild(clone);
     });
+}
+
+async function loadAbilitiesFromDataFile() {
+    //datafile = "./data/conditions.json";
+    const datafile = "https://cooperative-open-roleplaying-engine.github.io/core-base/data/abilities.json"
+    const data = await loadDataFile(datafile);
+
+    data.sort((a, b) => a.name.localeCompare(b.name));
+
+    const container = document.querySelector("#charopts_abilities");
+    const template = document.querySelector("#abilities_categories_template");
+    data.forEach(item => {
+        const clone = document.importNode(template.content, true);
+        clone.querySelector("h4").textContent = item.name;
+        clone.querySelector("p").textContent = item.description;
+        populateAbilitiesFromTemplate(item.abilities, clone);
+        container.appendChild(clone);
+    })
 }
