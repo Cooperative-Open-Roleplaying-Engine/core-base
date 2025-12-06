@@ -1001,16 +1001,40 @@
             <h3>Occupations</h3>
 
             <!-- Include occupatons from data file -->
+            <template id="occupations_categories_template">
+                <h4></h4>
+                <p></p>
+            </template>
+
             <template id="occupations_template">
                 <div class="occupations">
-                    <h4></h4>
+                    <h5></h5>
                     <p class="description"></p>
 
-                    <h5>Origin Skills</h5>
+                    <h6>Origin Skills</h6>
                     <ul class="skills"></ul>
 
-                    <h5>Origin Abilities</h5>
+                    <h6>Origin Abilities</h6>
                     <ul class="o_abilities"></ul>
+                </div>
+            </template>
+        </article>
+
+        <article id="charopts_skills">
+            <h3>Skills</h3>
+
+            <!-- Include occupatons from data file -->
+            <template id="skills_categories_template">
+                <h4></h4>
+                <p></p>
+            </template>
+
+            <template id="skills_template">
+                <div class="skills">
+                    <h5></h5>
+                    <h6>Specialisation</h6>
+                    <ul class="specialisation"></ul>
+                    <p class="description"></p>
                 </div>
             </template>
         </article>

@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Combat",
+        "description": "Combat skills are used during combat to make use of weapons or to understand the combat situation.",
+        "skills": [
+            {
+                "name": "Artillery",
+                "trait": "INT",
+                "description": "This skill describes how well a characters operates a piece or artillery like a fixed cannon, a mobile artillery gun or a tank gun. This includes the ability to load ammunition, point to a target, and fire the gun. Selecting a target and computing the coordinates is not covered by this skill but by the appropriate Science skill."
+            },
+            {
+                "name": "Melee Combat [Weapon Category]",
+                "specialisation": [
+                    "Swords",
+                    "Hammers and Axes",
+                    "Sabres",
+                    "Simple Weapons",
+                    "Bare Hands",
+                    "Pole Arms",
+                    "Duel Weapons"
+                ],
+                "trait": "STR",
+                "description": ""
+            },
+            {
+                "name": "Ranged Combat [Weapon Category]",
+                "specialisation": [
+                    "Bows",
+                    "Crossbows",
+                    "Thrown Weapons",
+                    "Hand Weapons",
+                    "Manual Rifles",
+                    "Automatic Rifles",
+                    "Heavy Weapons"
+                ],
+                "trait": "AGI",
+                "description": ""
+            }
+        ]
+    }
+]

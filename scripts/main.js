@@ -75,6 +75,7 @@ async function loadOriginsFromDataFile() {
 
 function populateAbilitiesFromTemplate(abilities, container) {
     template = document.querySelector("#ability_template");
+    abilities.sort((a, b) => a.name.localeCompare(b.name));
     abilities.forEach(item => {
         const clone = document.importNode(template.content, true);
         clone.querySelector("th.name").textContent = item.name;
@@ -95,22 +96,54 @@ async function loadOccupationsFromDataFile() {
 
     data.sort((a, b) => a.name.localeCompare(b.name));
 
-    container = document.querySelector("#conditions");
-    template = document.querySelector("#conditions_template");
+    container = document.querySelector("#charopts_occupations");
+    template = document.querySelector("#occupations_categories_template");
     data.forEach(item => {
-        const category = document.createElement("h4")
-        category.textContent = item.name;
-        container.appendChild(category)
-        const description = document.createElement("p")
-        description.textContent = item.description;
-        container.appendChild(category);
-        item.occupations.forEach(item => {
-            const clone = document.importNode(template.content, true);
-            clone.querySelector("dt").textContent = item.name;
-            clone.querySelector("dd").textContent = item.description;
-            container.appendChild(clone);
-        })
-    });
+        const clone = document.importNode(template.content, true);
+        clone.querySelector("h4").textContent = item.name;
+        clone.querySelector("p").textContent = item.description;
+        populateOccupationsFromTemplate(item.occupations, clone);
+        container.appendChild(clone);
+    })
 }
 
 
+function populateOccupationsFromTemplate(occupations, container) {
+    template = document.querySelector("#occupations_template");
+    occupations.sort((a, b) => a.name.localeCompare(b.name));
+    occupations.forEach(item => {
+        const clone = document.importNode(template.content, true);
+        clone.querySelector("h5").textContent = item.name;
+        clone.querySelector("p.description").textContent = item.description;
+        container.appendChild(clone);
+    });
+}
+
+async function loadSkillsFromDataFile() {
+    //datafile = "./data/conditions.json";
+    datafile = "https://cooperative-open-roleplaying-engine.github.io/core-base/data/skills.json"
+    const data = await loadDataFile(datafile);
+
+    data.sort((a, b) => a.name.localeCompare(b.name));
+
+    container = document.querySelector("#charopts_skills");
+    template = document.querySelector("#skills_categories_template");
+    data.forEach(item => {
+        const clone = document.importNode(template.content, true);
+        clone.querySelector("h4").textContent = item.name;
+        clone.querySelector("p").textContent = item.description;
+        populateSkillsFromTemplate(item.skills, clone);
+        container.appendChild(clone);
+    })
+}
+
+function populateSkillsFromTemplate(skills, container) {
+    template = document.querySelector("#skills_template");
+    skills.sort((a, b) => a.name.localeCompare(b.name));
+    skills.forEach(item => {
+        const clone = document.importNode(template.content, true);
+        clone.querySelector("h5").textContent = item.name;
+        clone.querySelector("p.description").textContent = item.description;
+        container.appendChild(clone);
+    });
+}
