@@ -5,6 +5,7 @@ function init() {
     loadConditionsFromDataFile();
     loadOriginsFromDataFile();
     loadOccupationsFromDataFile();
+    loadSkillsFromDataFile();
 }
 
 async function loadDataFile(datafile) {
@@ -143,7 +144,17 @@ function populateSkillsFromTemplate(skills, container) {
     skills.forEach(item => {
         const clone = document.importNode(template.content, true);
         clone.querySelector("h5").textContent = item.name;
+        const trait = document.createElement("span");
+        trait.textContent = item.trait
+        clone.querySelector("h5").appendChild(trait)
         clone.querySelector("p.description").textContent = item.description;
+        if (item.specialisation) {
+
+        }
+        else {
+            clone.querySelector("h6").remove();
+            clone.querySelector("ul").remove();
+        }
         container.appendChild(clone);
     });
 }

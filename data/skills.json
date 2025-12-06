@@ -35,6 +35,263 @@
                 ],
                 "trait": "AGI",
                 "description": ""
+            },
+            {
+                "name": "Tactics",
+                "trait": "INT",
+                "description": "This skill describes how well a character understands a combat situation and how they can influence the flow of events to benefit to their party."
+            }
+        ]
+    },
+    {
+        "name": "Outdoor",
+        "description": "",
+        "skills": [
+            {
+                "name": "Tracking",
+                "trait": "PER",
+                "description": ""
+            },
+            {
+                "name": "Survival",
+                "trait": "PER",
+                "description": ""
+            },
+            {
+                "name": "Observation",
+                "trait": "PER",
+                "description": ""
+            },
+            {
+                "name": "Orientation",
+                "trait": "PER",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "name": "Physical",
+        "description": "",
+        "skills": [
+            {
+                "name": "Acrobatics",
+                "trait": "AGI",
+                "description": ""
+            },
+            {
+                "name": "Athletics",
+                "trait": "STR",
+                "description": ""
+            },
+            {
+                "name": "Climbing",
+                "trait": "AGI",
+                "description": ""
+            },
+            {
+                "name": "Swimming",
+                "trait": "AGI",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "name": "Social",
+        "description": "",
+        "skills": [
+            {
+                "name": "Insight",
+                "trait": "PER",
+                "description": ""
+            },
+            {
+                "name": "Persuasion",
+                "trait": "PRE",
+                "description": ""
+            },
+            {
+                "name": "Deception",
+                "trait": "PRE",
+                "description": ""
+            },
+            {
+                "name": "Intimidation",
+                "trait": "PRE",
+                "description": ""
+            },
+            {
+                "name": "Performance",
+                "trait": "PRE",
+                "description": ""
+            },
+            {
+                "name": "Investigation",
+                "trait": "INT",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "name": "Knowledge",
+        "description": "",
+        "skills": [
+            {
+                "name": "Language",
+                "trait": "INT",
+                "description": ""
+            },
+            {
+                "name": "Engineering",
+                "trait": "INT",
+                "description": ""
+            },
+            {
+                "name": "Science",
+                "trait": "INT",
+                "description": ""
+            },
+            {
+                "name": "Strategy",
+                "trait": "INT",
+                "description": ""
+            },
+            {
+                "name": "History",
+                "trait": "INT",
+                "description": ""
+            },
+            {
+                "name": "Ciphers",
+                "trait": "INT",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "name": "Technical",
+        "description": "",
+        "skills": [
+            {
+                "name": "Driving",
+                "trait": "AGI",
+                "description": ""
+            },
+            {
+                "name": "Demolition",
+                "trait": "DEX",
+                "description": ""
+            },
+            {
+                "name": "Mechanics",
+                "trait": "DEX",
+                "description": ""
+            },
+            {
+                "name": "Forgery",
+                "trait": "DEX",
+                "description": ""
+            },
+            {
+                "name": "Electronics",
+                "trait": "DEX",
+                "description": ""
+            },
+            {
+                "name": "Electrics",
+                "trait": "DEX",
+                "description": ""
+            },
+            {
+                "name": "Craft",
+                "trait": "DEX",
+                "description": ""
+            },
+            {
+                "name": "Trapping",
+                "trait": "DEX",
+                "description": ""
+            },
+            {
+                "name": "Handiwork",
+                "trait": "DEX",
+                "description": ""
+            },
+            {
+                "name": "Torture",
+                "trait": "DEX",
+                "description": ""
+            },
+            {
+                "name": "Animal Handling",
+                "trait": "PRE",
+                "description": ""
+            },
+            {
+                "name": "Transmission",
+                "trait": "INT",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "name": "Rogue",
+        "description": "",
+        "skills": [
+            {
+                "name": "Stealth",
+                "trait": "AGI",
+                "description": ""
+            },
+            {
+                "name": "Hiding",
+                "trait": "AGI",
+                "description": ""
+            },
+            {
+                "name": "Sleight of Hand",
+                "trait": "DEX",
+                "description": ""
+            },
+            {
+                "name": "Escape Artist",
+                "trait": "AGI",
+                "description": ""
+            },
+            {
+                "name": "Disguise",
+                "trait": "INT",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "name": "Health and Safety",
+        "description": "",
+        "skills": [
+            {
+                "name": "First Aid",
+                "trait": "INT",
+                "description": ""
+            },
+            {
+                "name": "Medicine",
+                "trait": "INT",
+                "description": ""
+            },
+            {
+                "name": "Surgery",
+                "trait": "DEX",
+                "description": ""
+            },
+            {
+                "name": "Psychology",
+                "trait": "PRE",
+                "description": ""
+            },
+            {
+                "name": "Psychiatry",
+                "trait": "WIL",
+                "description": ""
             }
         ]
     }
