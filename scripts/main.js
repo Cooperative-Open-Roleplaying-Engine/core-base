@@ -15,14 +15,21 @@ async function loadDataFile(datafile) {
 async function loadConditionsFromDataFile() {
     //datafile = "./data/conditions.json";
     datafile = "https://cooperative-open-roleplaying-engine.github.io/core-base/data/conditions.json"
-    const data = await loadDataFile(datafile);
+    let data = await loadDataFile(datafile);
 
     conditions = document.querySelector("#conditions");
-    template = document.querySelector("#conditions_template")
+    template = document.querySelector("#conditions_template");
+    data = sortDataArrayByProperty(data, "name");
     data.forEach(condition => {
         const clone = document.importNode(template.content, true);
         clone.querySelector("dt").textContent = condition.name;
         clone.querySelector("dd").textContent = condition.description;
         conditions.appendChild(clone);
     });
+}
+
+function sortDataArrayByProperty(data, property) {
+    return data.sort((a, b) => {
+        a[property].localeCompare(b[property]);
+    })
 }

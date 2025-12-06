@@ -6,5 +6,53 @@
     {
         "name": "Deafened",
         "description": "A deafened character cannot hear. All skill checks that involve hearing made by the character are rolled with Disadvantage, and skills checks relying exclusively on hearing automatically fail."
+    },
+    {
+        "name": "Drained",
+        "description": "A drained character cannot Focus anymore. If the Drained condition should affect a character that already suffers from it, the Drained condition is replaced by the Exhausted condition for that character."
+    },
+    {
+        "name": "Exhausted",
+        "description": "An exhausted character cannot Focus anymore and only has 1 action slot per round, even if acquired abilities grant them more."
+    },
+    {
+        "name": "Flanked",
+        "description": "When a character is Flanked, all melee attacks against them are made with Advantage."
+    },
+    {
+        "name": "Grappled",
+        "description": "A Grappled character is considered Restricted, and all their attacks and all ranged attacks against them are made with Disadvantage. While Grappled, a character can spend one Use Skill action to attempt to break the grappling by winning an opposed skill test with Melee Attack [Bare Hands] for both contenders."
+    },
+    {
+        "name": "Incapacitated",
+        "description": "While Incapacitated, a character does not have any action slot and so cannot take any action, even if acquired abilities grant them more."
+    },
+    {
+        "name": "Injured",
+        "description": "While Injured, characters cannot Focus anymore. Moreover, Injured characters taking damage that would take them to 0 (or if the character is already at 0) in the corresponding Health immediately and permanently lose a 1 point in Constitution for Physical Health, or Will for Mental Health, plus an additional point for every step of 10 damage below 0. This loss is also immediately reflected to the maximum Health scores."
+    },
+    {
+        "name": "Invisible",
+        "description": "An Invisible character cannot be seen by natural means. While Invisible, a character has Advantage on their attacks and skill checks targeting Perception against all enemies that cannot seem them, and those enemies have Disadvantage to their attacks against the character. An Invisible character can still be heard or located by their traces if they do not pay attention."
+    },
+    {
+        "name": "Prone",
+        "description": "A Prone character suffers from Disadvantage to all their attack rolls, and imposes Disadvantage to ranged attacks and grants Advantage to melee attacks against them. Standing up removes the Prone condition. Falling prone can be done freely but standing up from being prone consumes half the character's movement. When moving while Prone, all terrain is considered as Difficult Terrain."
+    },
+    {
+        "name": "Restricted",
+        "description": "While Restricted, a character's speed is reduced to 0, and they cannot use the Movement combat action."
+    },
+    {
+        "name": "Surprised",
+        "description": "While a character is Surprised, they only have 1 action slot per round, even if acquired abilities grant them more, and they cannot take any action other action than Move action."
+    },
+    {
+        "name": "Unconscious",
+        "description": "While Unconscious, a character is considered Incapacitated and Prone. They cannot speak and they are not aware aware of their surroundings. They cannot perform any skill test and all their defences are considered to be 0."
+    },
+    {
+        "name": "ATest",
+        "description": "Sorting Test"
     }
 ]
