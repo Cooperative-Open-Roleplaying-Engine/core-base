@@ -16,7 +16,11 @@ async function generateTableOfContent() {
     template = document.querySelector("#toc_template");
     headers.forEach(item => {
         const clone = document.importNode(template.content, true);
+        clone.querySelector("li").classList.add(item.tagName);
         clone.querySelector("a").textContent = item.childNodes[0].textContent;
+        const ref = item.id ? item.id : crypto.randomUUID();
+        if (!item.id) { item.id = ref }
+        clone.querySelector("a").href = "#" + ref;
         toc.appendChild(clone);
     })
 }

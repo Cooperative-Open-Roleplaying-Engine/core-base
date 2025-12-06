@@ -78,6 +78,32 @@ section#toc {
         li {
             margin: 0;
             padding: 0;
+
+            &.H2 {
+                font-variant: small-caps;
+                font-size: 1.5em;
+                margin-block-start: 0.5lh;
+                border-bottom: 1px solid currentColor;
+
+                &:first-of-type {
+                    margin-block-start: 0;
+                }
+            }
+
+            &.H3 {}
+
+            &.H4 {
+                margin-inline-start: 1em;
+            }
+
+            &.H5 {
+                margin-inline-start: 1.5em;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: currentColor;
         }
     }
 }
