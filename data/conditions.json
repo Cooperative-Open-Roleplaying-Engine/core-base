@@ -50,9 +50,5 @@
     {
         "name": "Unconscious",
         "description": "While Unconscious, a character is considered Incapacitated and Prone. They cannot speak and they are not aware aware of their surroundings. They cannot perform any skill test and all their defences are considered to be 0."
-    },
-    {
-        "name": "ATest",
-        "description": "Sorting Test"
     }
 ]
