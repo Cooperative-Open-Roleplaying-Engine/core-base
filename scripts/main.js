@@ -19,13 +19,30 @@ async function loadConditionsFromDataFile() {
 
     data.sort((a, b) => a.name.localeCompare(b.name));
 
-    conditions = document.querySelector("#conditions");
+    container = document.querySelector("#conditions");
     template = document.querySelector("#conditions_template");
-    data.forEach(condition => {
+    data.forEach(item => {
         const clone = document.importNode(template.content, true);
-        clone.querySelector("dt").textContent = condition.name;
-        clone.querySelector("dd").textContent = condition.description;
-        conditions.appendChild(clone);
+        clone.querySelector("dt").textContent = item.name;
+        clone.querySelector("dd").textContent = item.description;
+        container.appendChild(clone);
+    });
+}
+
+async function loadOriginsFromDataFile() {
+    //datafile = "./data/conditions.json";
+    datafile = "https://cooperative-open-roleplaying-engine.github.io/core-base/data/origins.json"
+    const data = await loadDataFile(datafile);
+
+    data.sort((a, b) => a.name.localeCompare(b.name));
+
+    container = document.querySelector("#conditions");
+    template = document.querySelector("#conditions_template");
+    data.forEach(item => {
+        const clone = document.importNode(template.content, true);
+        clone.querySelector("h4").textContent = item.name;
+        clone.querySelector("p").textContent = item.description;
+        container.appendChild(clone);
     });
 }
 
