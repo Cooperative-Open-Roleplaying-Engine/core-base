@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Crafters",
+        "description": "People creating items",
+        "occupations": [
+            {
+                "name": "Alchemist",
+                "description": "te be added",
+                "skills": [],
+                "abilities": []
+            },
+            {
+                "name": "Blacksmith",
+                "description": "te be added",
+                "skills": [],
+                "abilities": []
+            }
+        ]
+    }
+]

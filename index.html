@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style/main.css" rel="stylesheet">
-    <script src="./scripts/main.js" type="p/javascript"></script>
+    <script src="./scripts/main.js" type="text/javascript"></script>
     <title>CORE - Cooperative Open Role-playing Engine</title>
 </head>
 
@@ -944,13 +944,75 @@
                 <dd>Origins differ from one another in many ways, and each of them demonstrates some unique adaptions or
                     cultural disciplines. These Abilities are unique to this origin, and can only be acquired by members
                     of this origin at the listed price.</dd>
-
-                <!-- Include origins from data file -->
-                <template id="origins_template">
-                    <h4></h4>
-                    <p></p>
-                </template>
             </dl>
+
+            <!-- Include origins from data file -->
+            <template id="origins_template">
+                <div class="origins">
+                    <h4></h4>
+                    <p class="description"></p>
+                    <div>
+                        <h6>Size</h6>
+                        <p class="size"></p>
+                        <h6>Speed</h6>
+                        <p class="speed"></p>
+                    </div>
+
+                    <h5>Origin Skills</h5>
+                    <ul class="skills"></ul>
+
+                    <h5>Origin Abilities</h5>
+                    <ul class="o_abilities"></ul>
+
+                    <h5>Unique Abilities</h5>
+                    <ul class="u_abilities"></ul>
+                </div>
+            </template>
+
+            <!-- Define template for abilities -->
+            <template id="ability_template">
+                <div class="ability">
+                    <table>
+                        <tr>
+                            <th class="name"></th>
+                            <th class="cost"></th>
+                        </tr>
+                        <tr class="multiple">
+                            <th>Multiple</th>
+                            <td></td>
+                        </tr>
+                        <tr class="requires">
+                            <th>Requires</th>
+                            <td></td>
+                        </tr>
+                        <tr class="incompatibility">
+                            <th>Incompatibility</th>
+                            <td></td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2"></td>
+                        </tr>
+                    </table>
+                </div>
+            </template>
+        </article>
+
+        <article id="charopts_occupations">
+            <h3>Occupations</h3>
+
+            <!-- Include occupatons from data file -->
+            <template id="occupations_template">
+                <div class="occupations">
+                    <h4></h4>
+                    <p class="description"></p>
+
+                    <h5>Origin Skills</h5>
+                    <ul class="skills"></ul>
+
+                    <h5>Origin Abilities</h5>
+                    <ul class="o_abilities"></ul>
+                </div>
+            </template>
         </article>
     </section>
 </body>
