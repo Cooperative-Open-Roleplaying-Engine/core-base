@@ -1,5 +1,3 @@
-import conditions from './data/conditions.json' assert {type: 'json'};
-
 window.onload = init;
 
 function init() {
@@ -8,17 +6,23 @@ function init() {
 }
 
 async function loadDataFile(datafile) {
-    console.log("Requesting data: " + datafile)
-    request = new Request(datafile);
-    response = await fetch(request);
+    console.log("Requesting data file: " + datafile)
+    const request = new Request(datafile);
+    const response = await fetch(request);
     return await response.json();
 }
 
-function loadConditionsFromDataFile() {
+async function loadConditionsFromDataFile() {
     //datafile = "./data/conditions.json";
-    //data = loadDataFile(datafile);
+    datafile = "https://cooperative-open-roleplaying-engine.github.io/core-base/data/conditions.json"
+    const data = await loadDataFile(datafile);
 
-    condList = document.querySelector("#conditions");
+    conditions = document.querySelector("#conditions");
     template = document.querySelector("#conditions_template")
-    console.log(conditions);
+    data.forEach(condition => {
+        const clone = document.importNode(template.content, true);
+        clone.querySelector("dt").textContent = condition.name;
+        clone.querySelector("dd").textContent = condition.description;
+        conditions.appendChild(clone);
+    });
 }

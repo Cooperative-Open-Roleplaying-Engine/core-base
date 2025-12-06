@@ -1,12 +1,10 @@
-{
-    "conditions": [
-        {
-            "name": "Blinded",
-            "description": "While a character is blinded, all enemies in the blind spot are considered Invisible to the character. Moreover, all skill checks that involve sight made by the character are rolled with Disadvantage, and skills checks relying exclusively on sight automatically fail."
-        },
-        {
-            "name": "Deafened",
-            "description": "A deafened character cannot hear. All skill checks that involve hearing made by the character are rolled with Disadvantage, and skills checks relying exclusively on hearing automatically fail."
-        }
-    ]
-}
+[
+    {
+        "name": "Blinded",
+        "description": "While a character is blinded, all enemies in the blind spot are considered Invisible to the character. Moreover, all skill checks that involve sight made by the character are rolled with Disadvantage, and skills checks relying exclusively on sight automatically fail."
+    },
+    {
+        "name": "Deafened",
+        "description": "A deafened character cannot hear. All skill checks that involve hearing made by the character are rolled with Disadvantage, and skills checks relying exclusively on hearing automatically fail."
+    }
+]
