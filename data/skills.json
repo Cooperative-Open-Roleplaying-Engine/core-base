@@ -6,7 +6,7 @@
             {
                 "name": "Artillery",
                 "trait": "INT",
-                "description": "This skill describes how well a characters operates a piece or artillery like a fixed cannon, a mobile artillery gun or a tank gun. This includes the ability to load ammunition, point to a target, and fire the gun. Selecting a target and computing the coordinates is not covered by this skill but by the appropriate Science skill."
+                "description": "This skill involves the technical training and specialized knowledge required for a character to operate, aim, and maintain heavy weaponry, such as siege engines or large caliber fixed guns."
             },
             {
                 "name": "Melee Combat [Weapon Category]",
@@ -20,7 +20,7 @@
                     "Duel Weapons"
                 ],
                 "trait": "STR",
-                "description": ""
+                "description": "This skill represents a character's training and proficiency in fighting in close quarters using any handheld weapon (e.g., swords, clubs, or axes) to physically engage an opponent."
             },
             {
                 "name": "Ranged Combat [Weapon Category]",
@@ -34,12 +34,12 @@
                     "Heavy Weapons"
                 ],
                 "trait": "AGI",
-                "description": ""
+                "description": "This skill measures a character's proficiency in using projectile weapons like bows, slings, or firearms to strike targets at a distance."
             },
             {
                 "name": "Tactics",
                 "trait": "INT",
-                "description": "This skill describes how well a character understands a combat situation and how they can influence the flow of events to benefit to their party."
+                "description": "This skill is the understanding of battlefield command, small-unit movement, and defensive positioning that a character uses during a dynamic combat encounter."
             }
         ]
     },
@@ -50,22 +50,22 @@
             {
                 "name": "Tracking",
                 "trait": "PER",
-                "description": ""
+                "description": "This skill is a character's ability to follow and interpret signs, footprints, and subtle disturbances left by a person, animal, or vehicle across various terrains."
             },
             {
                 "name": "Survival",
                 "trait": "PER",
-                "description": ""
+                "description": "This skill is a character's practical know-how for living off the land, including finding food, water, and shelter in wilderness environments, and preparing for harsh weather."
             },
             {
                 "name": "Observation",
                 "trait": "PER",
-                "description": ""
+                "description": "This skill is a character's ability to notice subtle details in their environment, detect traps, find hidden objects, or visually perceive small, fleeting changes."
             },
             {
                 "name": "Orientation",
                 "trait": "PER",
-                "description": ""
+                "description": "This skill is a character's ability to navigate using natural landmarks, maps, or celestial bodies, ensuring the character does not get lost and can consistently maintain their direction."
             }
         ]
     },
@@ -76,22 +76,22 @@
             {
                 "name": "Acrobatics",
                 "trait": "AGI",
-                "description": ""
+                "description": "This skill involves a character's training in tumbling, balancing, mid-air maneuvers, and complex body movements to avoid falls or pass through difficult spaces gracefully."
             },
             {
                 "name": "Athletics",
                 "trait": "STR",
-                "description": ""
+                "description": "This skill is a character's general physical fitness, stamina, and application of force for activities like jumping, sprinting, long-distance running, or resisting physical strain."
             },
             {
                 "name": "Climbing",
                 "trait": "AGI",
-                "description": ""
+                "description": "This skill is a character's ability to ascend vertical or near-vertical surfaces with speed and competence, whether using specialized gear, ropes, or bare hands and feet."
             },
             {
                 "name": "Swimming",
                 "trait": "AGI",
-                "description": ""
+                "description": "This skill is a character's technique and stamina required to move efficiently through water, whether for speed, silence, or staying afloat in turbulent or dangerous conditions."
             }
         ]
     },
@@ -102,32 +102,32 @@
             {
                 "name": "Insight",
                 "trait": "PER",
-                "description": ""
+                "description": "This skill is a character's capacity to accurately assess a person's motives, honesty, or mental state by observing their subtle body language and speech patterns."
             },
             {
                 "name": "Persuasion",
                 "trait": "PRE",
-                "description": ""
+                "description": "This skill is a character's ability to rationally argue, charm, negotiate, or inspire others using compelling logic and strong rhetoric to peacefully sway their opinion."
             },
             {
                 "name": "Deception",
                 "trait": "PRE",
-                "description": ""
+                "description": "This skill is a character's ability to knowingly mislead others through false statements, elaborate lies, or fabricated evidence, while maintaining a convincing facade."
             },
             {
                 "name": "Intimidation",
                 "trait": "PRE",
-                "description": ""
+                "description": "This skill is a character's use of explicit threats, displays of force, or dominant presence to frighten or coerce others into carrying out an action."
             },
             {
                 "name": "Performance",
                 "trait": "PRE",
-                "description": ""
+                "description": "This skill is a character's talent for entertaining an audience through singing, playing an instrument, dancing, acting, or public speaking."
             },
             {
                 "name": "Investigation",
                 "trait": "INT",
-                "description": ""
+                "description": "This skill is a character's focused, rational process of gathering clues, searching crime scenes, and connecting disparate facts to solve a case or logical puzzle."
             }
         ]
     },
@@ -138,32 +138,32 @@
             {
                 "name": "Language",
                 "trait": "INT",
-                "description": ""
+                "description": "This skill is a character's ability to speak, read, and write multiple distinct languages beyond their native tongue, allowing for wide communication."
             },
             {
                 "name": "Engineering",
                 "trait": "INT",
-                "description": ""
+                "description": "This skill is a character's technical application of scientific principles to the design, construction, and maintenance of structures, vehicles, or complex systems."
             },
             {
                 "name": "Science",
                 "trait": "INT",
-                "description": ""
+                "description": "This skill is a character's general theoretical expertise across scientific fields like chemistry, biology, or physics, used for laboratory work, experimentation, or analyzing natural phenomena."
             },
             {
                 "name": "Strategy",
                 "trait": "INT",
-                "description": ""
+                "description": "This skill is a character's long-term planning and decision-making skill used for managing large organizations, economies, or conducting political or military campaigns over extended periods."
             },
             {
                 "name": "History",
                 "trait": "INT",
-                "description": ""
+                "description": "This skill is a character's comprehensive, specialized knowledge of past events, cultures, eras, and important figures in the world or setting."
             },
             {
                 "name": "Ciphers",
                 "trait": "INT",
-                "description": ""
+                "description": "This skill involves the creation, analysis, and comprehensive breaking of secret codes, cryptography, and complex symbolic or encoded languages by a character."
             }
         ]
     },
@@ -174,62 +174,62 @@
             {
                 "name": "Driving",
                 "trait": "AGI",
-                "description": ""
+                "description": "This skill is a character's reflexes and coordination needed to control high-speed vehicles, maneuver in tight spaces, or perform vehicular stunts while maintaining control."
             },
             {
                 "name": "Demolition",
                 "trait": "DEX",
-                "description": ""
+                "description": "This skill is a character's precise application of knowledge (informed by Science skills) used to place and safely detonate explosives to breach structures or destroy targets with accuracy."
             },
             {
                 "name": "Mechanics",
                 "trait": "DEX",
-                "description": ""
+                "description": "This skill is a character's practical ability to fix, disassemble, modify, and maintain complex mechanical devices, engines, or clockwork systems."
             },
             {
                 "name": "Forgery",
                 "trait": "DEX",
-                "description": ""
+                "description": "This skill is a character's ability to skillfully replicate documents, handwriting, art, signatures, or official seals to create convincing fakes."
             },
             {
                 "name": "Electronics",
                 "trait": "DEX",
-                "description": ""
+                "description": "This skill is a character's delicate skill of dealing with complex, small-scale electronic devices, sensors, microchips, and digital systems."
             },
             {
                 "name": "Electrics",
                 "trait": "DEX",
-                "description": ""
+                "description": "This skill is a character's practical knowledge of installing, diagnosing, maintaining, and safely repairing electrical wiring, power grids, and basic circuits."
             },
             {
                 "name": "Craft",
                 "trait": "DEX",
-                "description": ""
+                "description": "This skill is a character's practical ability to create, forge, weave, or produce items in a specific, hands-on trade like metalworking, tailoring, or ceramics."
             },
             {
                 "name": "Trapping",
                 "trait": "DEX",
-                "description": ""
+                "description": "This skill is a character's specialized ability of setting snares, pits, and complex mechanical traps to capture animals or deter intruders."
             },
             {
                 "name": "Handiwork",
                 "trait": "DEX",
-                "description": ""
+                "description": "This skill is a character's general fine motor skills and attention to detail used for small, non-specialized tasks like tying complex knots, performing delicate assembly, or minor repair work."
             },
             {
                 "name": "Torture",
                 "trait": "DEX",
-                "description": ""
+                "description": "This skill is a character's disciplined, systematic use of physical pain or psychological manipulation to extract information from a captive."
             },
             {
                 "name": "Animal Handling",
                 "trait": "PRE",
-                "description": ""
+                "description": "This skill is a character's ability to work with, calm, train, and command animals through understanding their behavior and establishing trust or dominance."
             },
             {
                 "name": "Transmission",
                 "trait": "INT",
-                "description": ""
+                "description": "This skill is a character's technical knowledge of operating and understanding communications equipment, radio frequencies, signal encoding, and long-distance messaging systems."
             }
         ]
     },
@@ -240,27 +240,27 @@
             {
                 "name": "Stealth",
                 "trait": "AGI",
-                "description": ""
+                "description": "This skill is a character's ability to move silently, avoid breaking branches, and generally prevent creating noise while moving or taking action."
             },
             {
                 "name": "Hiding",
                 "trait": "AGI",
-                "description": ""
+                "description": "This skill is a character's capability to find optimal concealment and remain still, utilizing shadows or terrain to avoid being seen or noticed by others."
             },
             {
                 "name": "Sleight of Hand",
                 "trait": "DEX",
-                "description": ""
+                "description": "This skill is the delicate process of performing close-up illusions, palming small objects, picking pockets, or manipulating tiny components without being detected."
             },
             {
                 "name": "Escape Artist",
                 "trait": "AGI",
-                "description": ""
+                "description": "This skill is a character's training in contorting their body and exploiting weaknesses to quickly and silently escape from bonds, restraints, manacles, or confined spaces."
             },
             {
                 "name": "Disguise",
                 "trait": "INT",
-                "description": ""
+                "description": "This skill is a character's ability to convincingly alter their physical appearance, clothing, and mannerisms to pass as another person or blend into a specific crowd."
             }
         ]
     },
@@ -271,27 +271,27 @@
             {
                 "name": "First Aid",
                 "trait": "INT",
-                "description": ""
+                "description": "This skill is the practical application of immediate medical knowledge used by a character to administer emergency care, stabilize a wounded person, or stop severe bleeding."
             },
             {
                 "name": "Medicine",
                 "trait": "INT",
-                "description": ""
+                "description": "This skill is a character's advanced knowledge of diagnosis, non-invasive treatment, and management of diseases, injuries, and illnesses, including the effective use of pharmaceutical or herbal remedies."
             },
             {
                 "name": "Surgery",
                 "trait": "DEX",
-                "description": ""
+                "description": "This skill involves a character's specialized ability to perform delicate, invasive procedures on a patient using precision tools to repair severe internal damage or remove foreign objects."
             },
             {
                 "name": "Psychology",
                 "trait": "PRE",
-                "description": ""
+                "description": "This skill is a character's ability to understand and assess human behavior, motivation, and emotional states to predict reactions, influence opinions, or provide general counsel."
             },
             {
                 "name": "Psychiatry",
                 "trait": "WIL",
-                "description": ""
+                "description": "This skill is the study and practice of diagnosing and treating severe mental illnesses, deep trauma, or emotional disturbances that a character uses through structured intervention and therapy."
             }
         ]
     }
