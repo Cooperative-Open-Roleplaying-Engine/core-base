@@ -122,6 +122,13 @@ section {
             margin-block-end: 0.3lh;
         }
 
+        h6 {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-block-start: 1rem;
+            margin-block-end: 0.2rem;
+        }
+
         p {
             margin-block: 0;
 
@@ -130,29 +137,48 @@ section {
             }
         }
 
-        dl {}
+        dl {
+            dt {
+                font-weight: bold;
+                display: flex;
+                justify-content: space-between;
+                margin-block-start: 1lh;
+                margin-block-end: 0.5lh;
+                font-size: 1rem;
 
-        dt {
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            margin-block-start: 1lh;
-            margin-block-end: 0.5lh;
-            font-size: 1rem;
+                abbr::before {
+                    content: "[";
+                }
 
-            abbr::before {
-                content: "[";
+                abbr::after {
+                    content: "]";
+                }
             }
 
-            abbr::after {
-                content: "]";
+            dd {
+                margin-inline-start: 1em;
             }
         }
+
 
         a[href*="#"] {
             text-decoration: none;
             color: currentColor;
             font-style: italic;
+        }
+
+        table {
+            margin-inline: auto;
+            margin-block: 1lh;
+            min-width: 50%;
+
+            caption {
+                display: none;
+            }
+
+            th {
+                text-align: left;
+            }
         }
     }
 
