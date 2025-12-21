@@ -17,10 +17,12 @@
 }
 
 body {
+    --inline-padding: 2rem;
+
     width: 50rem;
     margin-inline: auto;
     margin-block: 0;
-    padding: 2rem;
+    padding: var(--inline-padding);
     background-color: white;
 }
 
@@ -28,7 +30,7 @@ header {
     text-align: right;
     margin-block-start: 12lh;
     padding: 0;
-    margin-inline: -2rem;
+    margin-inline: calc(0rem - (var(--inline-padding)));
 
     h1 {
         font-size: 6rem;
@@ -83,7 +85,9 @@ section#toc {
                 font-variant: small-caps;
                 font-size: 1.5em;
                 margin-block-start: 0.5lh;
-                border-bottom: 1px solid currentColor;
+                background-color: #CCCCCC;
+                padding-inline: 0.2em;
+                margin-inline-start: -0.2em;
 
                 &:first-of-type {
                     margin-block-start: 0;
@@ -123,10 +127,14 @@ section {
         font-variant: small-caps;
         font-weight: normal;
         text-align: right;
-        border-bottom: 1px solid currentColor;
+        background-color: #CCCCCC;
+        margin-inline: calc(0rem - (var(--inline-padding)));
+        padding-inline-end: var(--inline-padding);
+        padding-block: 0.2em;
+        column-span: all;
 
         @media print {
-            column-span: all;
+
             margin-block-start: 0;
         }
     }
