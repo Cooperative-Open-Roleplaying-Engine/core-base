@@ -1,7 +1,7 @@
 [
     {
         "name": "Combat",
-        "description": "Combat skills are used during combat to make use of weapons or to understand the combat situation.",
+        "description": "Combat skills represent a character's training and proficiency in various forms of engagement, ranging from direct physical confrontation and the use of ranged weaponry to the strategic and tactical management of a battlefield.",
         "skills": [
             {
                 "name": "Artillery",
@@ -45,7 +45,7 @@
     },
     {
         "name": "Outdoor",
-        "description": "",
+        "description": "Outdoor skills are used to navigate, survive, and interact with the natural world, relying on a character's awareness and practical experience in the wilderness.",
         "skills": [
             {
                 "name": "Tracking",
@@ -71,7 +71,7 @@
     },
     {
         "name": "Physical",
-        "description": "",
+        "description": "Physical skills represent a character's raw athleticism, coordination, and the ability to perform demanding bodily tasks that require strength, agility, or endurance.",
         "skills": [
             {
                 "name": "Acrobatics",
@@ -97,7 +97,7 @@
     },
     {
         "name": "Social",
-        "description": "",
+        "description": "Social skills represent a character's ability to interact with others, influence their behavior, and navigate complex interpersonal dynamics through communication and observation.",
         "skills": [
             {
                 "name": "Insight",
@@ -133,7 +133,7 @@
     },
     {
         "name": "Knowledge",
-        "description": "",
+        "description": "Knowledge skills represent a character's academic background, theoretical understanding, and specialized information across various intellectual disciplines and scholarly fields.",
         "skills": [
             {
                 "name": "Language",
@@ -169,7 +169,7 @@
     },
     {
         "name": "Technical",
-        "description": "",
+        "description": "Technical skills represent a character's practical application of specialized tools, manual dexterity, and technical knowledge to manipulate, repair, or create complex systems and objects.",
         "skills": [
             {
                 "name": "Driving",
@@ -235,7 +235,7 @@
     },
     {
         "name": "Rogue",
-        "description": "",
+        "description": "Rogue skills represent a character's proficiency in clandestine activities, subterfuge, and the ability to operate undetected or escape from restrictive situations through agility and cunning.",
         "skills": [
             {
                 "name": "Stealth",
@@ -266,7 +266,7 @@
     },
     {
         "name": "Health and Safety",
-        "description": "",
+        "description": "Health and Safety skills represent a character's knowledge and practical ability to maintain physical and mental well-being, ranging from emergency medical care and surgery to the diagnosis and treatment of psychological conditions.",
         "skills": [
             {
                 "name": "First Aid",
