@@ -27,17 +27,17 @@
         </ability>
         <ability name="Dual Wielder" cost="10 XP" prerequisite="None" multiple="No" incompatibility="None">
             <text>
-                Your are trained to wield weapons in your off-hand. When taking the Attack combat action to attack with your dominant hand weapon, you can perform one additional attack with your off-hand weapon as part of the action.
+                You are trained to wield weapons in your off-hand. When taking the Attack combat action to attack with your dominant hand weapon, you can perform one additional attack with your off-hand weapon as part of the action.
             </text>
         </ability>
         <ability name="Quick Draw [Weapon Category]" cost="5 XP" prerequisite="None" multiple="Yes" incompatibility="None">
             <text>
-                Your are trained to draw your weapon quickly. When acquiring this Ability, select a weapon category. Every time you want to perform an attack with a weapon of that category and you do not have the weapon ready in your hand, you can draw the weapon as part of the Attack combat action. You can select this Ability multiple times, selecting each time a different Weapon Category.
+                You are trained to draw your weapon quickly. When acquiring this Ability, select a weapon category. Every time you want to perform an attack with a weapon of that category and you do not have the weapon ready in your hand, you can draw the weapon as part of the Attack combat action. You can select this Ability multiple times, selecting each time a different Weapon Category.
             </text>
         </ability>
         <ability name="Quick Reload [Weapon Category]" cost="5 XP" prerequisite="None" multiple="No" incompatibility="None">
             <text>
-                Your are trained to reload your weapon quickly. When acquiring this Ability, select a weapon category. Every time you want to reload a weapon of that category, the amount of Reload combat actions required to fully reload the weapons is reduced by 1. Reducing that amount to 0 implies that the weapon can be fully reloaded as part of the Attack combat action.
+                You are trained to reload your weapon quickly. When acquiring this Ability, select a weapon category. Every time you want to reload a weapon of that category, the amount of Reload combat actions required to fully reload the weapons is reduced by 1. Reducing that amount to 0 implies that the weapon can be fully reloaded as part of the Attack combat action.
             </text>
         </ability>
     </category>
@@ -58,4 +58,3 @@
         </ability>
     </category>
 </abilities>
-

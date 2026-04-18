@@ -6,7 +6,7 @@
         <description>Combat skills are used during combat to make use of weapons or to understand the combat situation.</description>
         <skill name="Artillery" trait="INT">
             <text>
-                This skill describes how well a characters operates a piece or artillery like a fixed cannon, a mobile artillery gun or a tank gun. This includes the ability to load ammunition, point to a target, and fire the gun. Selecting a target and computing the coordinates is not covered by this skill but by the appropriate Science skill.
+                This skill describes how well a character operates a piece of artillery like a fixed cannon, a mobile artillery gun, or a tank gun. This includes the ability to load ammunition, point to a target, and fire the gun. Selecting a target and computing the coordinates is not covered by this skill but by the appropriate Science skill.
             </text>
         </skill>      
         <skill name="Melee Combat [Weapon Category]" trait="STR">
