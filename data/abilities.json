@@ -9,7 +9,7 @@
                 "requires": "None",
                 "multiple": "Yes",
                 "incompatibility": "None",
-                "description": "You have trained hard to improve one of your traits. You immediately gain 1 point in the selected Trait."
+                "description": "Through intense physical conditioning or rigorous mental discipline, you have permanently enhanced your natural potential. Whether through heavy lifting, meditation, or scholarly study, your base capacity in the chosen trait increases by 1 point."
             },
             {
                 "name": "Improved Health",
@@ -17,7 +17,7 @@
                 "requires": "None",
                 "multiple": "Yes",
                 "incompatibility": "None",
-                "description": "You have trained hard to improve your health. You immediately gain a D6 or 3 points, you choose, in the selected Health. The rolled D6 cannot explode."
+                "description": "You have spent significant time building your endurance or mental fortitude, allowing you to withstand more punishment or psychological strain. Your maximum Physical or Mental Health increases by a D6 or 3 points (you choose)."
             },
             {
                 "name": "Improved Skill",
@@ -25,7 +25,7 @@
                 "requires": "None",
                 "multiple": "Yes",
                 "incompatibility": "None",
-                "description": "You have trained hard to improve one of your skills. You immediately gain a D6 or 3 points, you choose, in the selected Skill."
+                "description": "Through dedicated practice and repetition, you have reached a new tier of competence in your chosen field. Your proficiency in the selected Skill increases by a D6 or 3 points (you choose), reflecting your deepened understanding and muscle memory."
             }
         ]
     },
@@ -39,7 +39,7 @@
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "You are trained to use either arm and hand indifferently. When performing an off-hand action, you do not suffer from Disadvantage anymore."
+                "description": "Years of training have eliminated your reliance on a dominant hand, allowing you to wield tools or weapons with equal grace in either hand. You no longer suffer from Disadvantage when performing actions with your off-hand."
             },
             {
                 "name": "Dual Wielder",
@@ -47,7 +47,7 @@
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "Your are trained to wield weapons in your off-hand. When taking the Attack combat action to attack with your dominant hand weapon, you can perform one additional attack with your off-hand weapon as part of the action."
+                "description": "You have mastered the complex coordination required to fight with a weapon in each hand, creating a whirlwind of strikes. When you take the Attack action with your dominant hand, you may immediately perform one additional attack with your off-hand weapon as part of the same action."
             },
             {
                 "name": "Quick Draw [Weapon Category]",
@@ -55,7 +55,7 @@
                 "requires": "None",
                 "multiple": "Yes",
                 "incompatibility": "None",
-                "description": "Your are trained to draw your weapon quickly. When acquiring this Ability, select a weapon category. Every time you want to perform an attack with a weapon of that category and you do not have the weapon ready in your hand, you can draw the weapon as part of the Attack combat action. You can select this Ability multiple times, selecting each time a different Weapon Category."
+                "description": "You have practised the fluid motion of drawing your weapon until it is a reflex. You can draw a weapon of the selected category and prepare it for use as part of an Attack action, rather than spending a separate action. You can select this Ability multiple times, selecting another weapong category each time."
             },
             {
                 "name": "Quick Reload [Weapon Category]",
@@ -63,7 +63,15 @@
                 "requires": "None",
                 "multiple": "Yes",
                 "incompatibility": "None",
-                "description": "Your are trained to reload your weapon quickly. When acquiring this Ability, select a weapon category. Every time you want to reload a weapon of that category, the amount of Reload combat actions required to fully reload the weapons is reduced by 1. Reducing that amount to 0 implies that the weapon can be fully reloaded as part of the Attack combat action."
+                "description": "You can manipulate magazines, bolts, or strings with mechanical precision even in the heat of battle. The number of Reload actions required to fully prepare the selected weapon category is reduced by 1. Reducing that amount to 0 implies that the weapon can be fully reloaded as part of the Attack combat action. You can select this Ability multiple times, selecting another weapong category each time."
+            },
+            {
+                "name": "Defensive Stance",
+                "cost": "10 XP",
+                "requires": "None",
+                "multiple": "No",
+                "incompatibility": "None",
+                "description": "While using the Defence combat action, your Physical Defence receives an additional +2 fixed bonus."
             }
         ]
     },
@@ -77,7 +85,7 @@
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "You know how to utilise your surroundings effectively. Increase Physical Defence by +1BD whenever you have at least Half Cover."
+                "description": "You have an eye for the defensive geometry of your surroundings, instinctively tucking into corners and minimising your profile. Your Physical Defence increases by 1BD whenever you are behind at least Half Cover."
             },
             {
                 "name": "Suppressing Fire",
@@ -85,7 +93,7 @@
                 "requires": "Ranged Combat 2",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "By unleashing a hail of fire, you pin enemies down. When you perform an Attack action, you can choose to inflict the Restricted condition on the target instead of dealing damage if the attack hits."
+                "description": "You unleash a frightening volume of fire or aggressive strikes that force your opponent to seek cover rather than move. When you hit with an Attack action, you may choose to inflict the Restricted condition instead of dealing damage."
             },
             {
                 "name": "Combat Reflexes",
@@ -93,7 +101,7 @@
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "Your battle instincts are razor-sharp. You gain a permanent +5 bonus to your Reaction score."
+                "description": "You exist in a state of heightened readiness, your nerves twitching at the slightest hint of movement. This supernatural or highly-trained awareness grants you a permanent +5 bonus to your Reaction score."
             }
         ]
     },
@@ -107,7 +115,7 @@
                 "requires": "None",
                 "multiple": "Yes",
                 "incompatibility": "None",
-                "description": "You have friends in useful places. Each time you take this, define a field (e.g., Criminal, Corporate, Academic). You gain Advantage on Investigation and Insight checks involving that field."
+                "description": "You have cultivated a web of informants, colleagues, or associates who provide you with valuable intelligence. Choose a specific field (such as Criminal, Corporate, or Academic); you gain Advantage on Investigation and Insight checks related to that field."
             },
             {
                 "name": "Commanding Presence",
@@ -115,7 +123,7 @@
                 "requires": "Presence 3",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "Your authority is undeniable. Once per encounter, you may use a Move action to remove the Surprised or Drained condition from an ally within 10 metres."
+                "description": "Your voice carries a weight of authority that can snap others out of shock or exhaustion. Once per encounter, you can use a Move action to shout orders or encouragement, removing the Surprised or Drained condition from an ally within 10 metres."
             },
             {
                 "name": "Words of Strength",
@@ -123,7 +131,7 @@
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "You know the words to motivate your group. Once per short rest, you can restore 1 trait die to an ally who is currently Drained."
+                "description": "You possess the empathy and charisma to remind your allies of their inner resolve when they are flagging. Once per short rest, you can speak a few restorative words to an ally, allowing them to recover 1 trait die from a Drained pool."
             }
         ]
     },
@@ -137,7 +145,7 @@
                 "requires": "Mechanics 2",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "You can fix anything with scrap. You can perform temporary repairs on a device using 1 Use Item action. The item functions for a single encounter before breaking again."
+                "description": "You possess a brilliant, if messy, understanding of machinery, allowing you to bypass broken circuits or forge parts from scrap. You can perform temporary repairs on a device using 1 Use Item action; the device functions for a single encounter before failing completely."
             },
             {
                 "name": "Neural Interface",
@@ -145,7 +153,7 @@
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "You have a direct link to machines. You gain Advantage on all Use Skill checks involving Hacking, Piloting, or Remote Operation of drones."
+                "description": "Whether through cybernetic implants or an intuitive mystical bond, your mind communicates directly with machine logic. You gain Advantage on all Use Skill checks involving Hacking, Piloting, or the Remote Operation of drones."
             },
             {
                 "name": "Hacker's Intuition",
@@ -153,7 +161,7 @@
                 "requires": "INT 3",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "You navigate digital architectures with ease. The time required for technical tasks involving computers or electronics is halved."
+                "description": "You perceive the flow of data as a natural landscape, spotting shortcuts and vulnerabilities that others miss. Your efficiency with digital systems is so great that the time required for technical tasks involving computers or electronics is halved."
             }
         ]
     },
@@ -167,7 +175,7 @@
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "Once per short rest, you can perform a First Aid action. Roll a Medicine skill test vs a Difficulty of 10. Success restores 1D10 points to the target's Physical Health."
+                "description": "You are trained to keep your cool in medical emergencies, quickly staunching bleeding or stabilising trauma. Once per short rest, you can perform a First Aid action (Medicine vs Difficulty 10) to restore 1D10 points to a target's Physical Health."
             },
             {
                 "name": "Hardened Body",
@@ -175,7 +183,7 @@
                 "requires": "CON 3",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "You have survived enough to build extreme resilience. You gain a permanent +10 bonus to your maximum Physical Health."
+                "description": "Your body has been forged by hardship, scarred by past battles, or chemically reinforced to withstand extreme trauma. This resilience grants you a permanent +10 bonus to your maximum Physical Health."
             }
         ]
     }
