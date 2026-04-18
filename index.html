@@ -269,10 +269,10 @@
             </p>
 
             <h4>Experience</h4>
-            <p>Experience defines how much a character has learnt as well as how much they can still progress. During
+            <p>Experience Points (XP) represent the sum of a character's training, trials, and personal growth. During
                 the game, the character will be awarded experience points (XP) by the GM. Those experience points add to
                 the total experience gained by the character, defining how advanced they are. Moreover, experience
-                points can be spent to improve the character's capabilities and influence the game. The use of
+                points represent a character's capacity to push beyond their current limits. The use of
                 Experience is described in the <a href="#use_experience">Playing the Game - Using Experience</a>
                 section.</p>
 
@@ -461,7 +461,7 @@
                 pool is replenished.</p>
 
             <p>Every time consuming a die reduces the associated trait pool to 0, the character suffers from the
-                Drained condition until the at least one of the trait dice if recovered.</p>
+                Drained condition until at least one of the trait dice is recovered.</p>
 
             <p>Abilities and other circumstances can also consume dice to activate some special effects. When
                 used this way, the consumed dice only serve as triggers for ability effects and do not alter any
@@ -545,7 +545,7 @@
                     can only perform one attack per action unless specified otherwise. If you are wielding more than one
                     weapon, you choose which hand and weapon will perform the attack. When using a barehanded attack, a
                     character can choose to grapple the target instead of dealing damage, reducing the Roll Margin to 0
-                    and inflicting the Grappled condition his target.</dd>
+                    and inflicting the Grappled condition on the target.</dd>
 
                 <dt>Focus</dt>
                 <dd>You can focus on your next action, as described in <a href="#system_focusing">The CORE D6
@@ -615,7 +615,7 @@
                 subtracted from the appropriate Health, depending on the attack type.</p>
 
             <h4>Injuries</h4>
-            <p>If damage bring a character's Physical Health or Mental Health to 0, the character falls Unconscious, and
+            <p>If damage brings a character's Physical Health or Mental Health to 0, the character falls Unconscious and
                 becomes Injured in the corresponding Health. If a character's Health is brought back to 1 or more, they
                 are not Unconscious anymore, but they remain Injured until a healing effect specifically removes the
                 Injured condition or until they recover.</p>
@@ -780,8 +780,7 @@
             <p>During an extended rest, characters avoid demanding activities for at least a whole day (equivalent to 24
                 hours), and only perform mundane tasks of daily life, such as cooking, eating, resting, reading, and so
                 on. If they perform any kind of straining activity, including fighting, they will lose all the benefits
-                of the rest. If uninterrupted, at the of the extended rest, they can benefit from the following effects.
-            </p>
+                of the rest. If uninterrupted, at the end of the extended rest, they can benefit from the following effects.</p>
 
             <dl>
                 <dt>Recover Health</dt>
@@ -821,24 +820,24 @@
                 they have enough experience points to spend. Moreover, these options can be purchased to benefit another
                 character than the one effectively spending the experience.</p>
 
-            <h5>Inner Forces <span>1 XP</span></h5>
+            <h5>Inner Forces <span>2 XP</span></h5>
             <p>Drawing from their past experiences, the character tries to bend the situation to their best advantage.
                 When purchasing this option, the player selects one of the characters. The next skill check of that
                 character will be made with Advantage.</p>
 
-            <h5>A Bit of Luck <span>2 XP</span></h5>
+            <h5>A Bit of Luck <span>5 XP</span></h5>
             <p>Based on what they learned, a character knows when to push their luck to reach their objectives. When
                 purchasing this option, the player selects a roll that just occurred, which can be any type of roll. The
                 character that attempted the roll must re-roll and keep the second roll to determine the outcome of the
                 action. The first roll is completely ignored as if it never occurred, meaning that consumed dice for the
                 first roll are recovered. The first roll never happened.</p>
 
-            <h5>Resources Within <span>2 XP</span></h5>
+            <h5>Resources Within <span>10 XP</span></h5>
             <p>A character has seen enough to know they have more in them. When purchasing this option, the player
                 selects one of the characters. The selected character can immediately restore all the consumed dice in
                 one of their trait pools.</p>
 
-            <h5>A Sign of Destiny <span>5 XP</span></h5>
+            <h5>A Sign of Destiny <span>50 XP</span></h5>
             <p>Sometimes characters are destined to higher deeds, and nothing in their path can stop them. When
                 purchasing this option, the player selects an effect directly affecting a player character. That effect
                 can be ignored or changed in favour of the character. This option can prevent or transform a single
@@ -859,13 +858,13 @@
                 a character must fulfil all the pre-requisites of that ability, and must not match any of its
                 incompatibility criteria. The character immediately benefits from the effects of the new ability.</p>
 
-            <h5>Change of Occupation <span>5 XP</span></h5>
+            <h5>Change of Occupation <span>25 XP</span></h5>
             <p>A character can decide to change their occupation and start practising in a new field. The player can
                 replace the character's current Occupation with a new one, immediately gaining all the effects of the
                 new one and losing access to the effects of the old one. Already acquired skills and abilities remain
                 unchanged.</p>
 
-            <h5>Miraculous Recovery <span>2 XP</span></h5>
+            <h5>Miraculous Recovery <span>10 XP</span></h5>
             <p>An injured character has sometimes gone through so much that they know this one will heal too. By
                 purchasing this option, a character can remove the Injured condition from one of their Health. If a
                 character is injured in both Healths, they must purchase this option once for each injury to fully
@@ -902,9 +901,43 @@
 
             <p>At the beginning, set your occupation to None. You will be able to purchase one later.</p>
 
-            <h4 class="numbered">Receive Initial Experience</h4>
-            <p>The GM will now grant you initial Experience to reflect what the character lived and went through from
-                their birth till today.</p>
+            <h4 class="numbered">Receive Starting Experience</h4>
+            <p>New characters receive a starting pool of Experience Points (XP) based on their established background and 
+               previous training. The Game Master will specify the Tier for the campaign:</p>
+
+            <table>
+                <caption>Starting Experience Tiers</caption>
+                <tr>
+                    <th>Tier</th>
+                    <th>Experience</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Rookie</td>
+                    <td>150 XP</td>
+                    <td>A character just beginning their journey.</td>
+                </tr>
+                <tr>
+                    <td>Junior</td>
+                    <td>350 XP</td>
+                    <td>Someone with professional training or early field experience.</td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td>600 XP</td>
+                    <td>An established individual with several years of active experience.</td>
+                </tr>
+                <tr>
+                    <td>Senior</td>
+                    <td>1100 XP</td>
+                    <td>A highly experienced veteran of their craft.</td>
+                </tr>
+                <tr>
+                    <td>Master</td>
+                    <td>2000 XP</td>
+                    <td>A legendary figure at the peak of their potential.</td>
+                </tr>
+            </table>
 
             <h4 class="numbered">Spend Experience</h4>
             <p>You can now describe your character's life and evolution by spending the initial Experience you received

@@ -5,7 +5,7 @@
         "abilities": [
             {
                 "name": "Improved Trait",
-                "cost": "Current Score × 5 in XP",
+                "cost": "Current Score × 20 in XP",
                 "requires": "None",
                 "multiple": "Yes",
                 "incompatibility": "None",
@@ -13,7 +13,7 @@
             },
             {
                 "name": "Improved Health",
-                "cost": "1 XP",
+                "cost": "10 XP",
                 "requires": "None",
                 "multiple": "Yes",
                 "incompatibility": "None",
@@ -21,7 +21,7 @@
             },
             {
                 "name": "Improved Skill",
-                "cost": "Current Score in XP",
+                "cost": "Current Score × 5 in XP",
                 "requires": "None",
                 "multiple": "Yes",
                 "incompatibility": "None",
@@ -35,7 +35,7 @@
         "abilities": [
             {
                 "name": "Ambidexterity",
-                "cost": "10 XP",
+                "cost": "40 XP",
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
@@ -43,7 +43,7 @@
             },
             {
                 "name": "Dual Wielder",
-                "cost": "10 XP",
+                "cost": "25 XP",
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
