@@ -233,9 +233,9 @@
                     character is in perfect shape, healthy and fit. When it decreases, it indicates that the character
                     is wounded or suffers from a
                     condition. If it reaches 0, the character becomes physically injured and can potentially die. The
-                    maximum Physical Health score equals to the Constitution score × 10 + modifiers provided by
-                    Abilities. Any modification of the Constitution trait is immediately reflected to the maximum
-                    Physical Health score.</dd>
+                    maximum Physical Health score is the Constitution score multiplied by 10. Bonuses from
+                    Abilities are added to this total. Any modification of the Constitution trait is immediately
+                    reflected to the maximum Physical Health score.</dd>
 
                 <dt>Mental Health</dt>
                 <dd>A character's mental health describes how well their mind is. When at maximum, it means the
@@ -269,12 +269,15 @@
             </p>
 
             <h4>Experience</h4>
-            <p>Experience Points (XP) represent the sum of a character's training, trials, and personal growth. During
-                the game, the character will be awarded experience points (XP) by the GM. Those experience points add to
-                the total experience gained by the character, defining how advanced they are. Moreover, experience
-                points represent a character's capacity to push beyond their current limits. The use of
-                Experience is described in the <a href="#use_experience">Playing the Game - Using Experience</a>
-                section.</p>
+            <p>Experience Points (XP) represent the evolution of a character. Growth is gained through two primary
+                methods: Downtime, which is the steady discipline of practice during
+                downtime, and Active Experience, the rapid mastery gained through the pressure of
+                adventuring. Experience defines how advanced a character is and represents their capacity to push beyond
+                their current limits. The acquisition and use of Experience are described in the
+                <a href="#use_experience">Using Experience</a> and <a href="#gm_awarding_experience">Awarding
+                    Experience</a>
+                section.
+            </p>
 
             <h4>Skills</h4>
             <p>Skills define the knowledge and the training in certain topics and situations. They define how capable a
@@ -780,7 +783,8 @@
             <p>During an extended rest, characters avoid demanding activities for at least a whole day (equivalent to 24
                 hours), and only perform mundane tasks of daily life, such as cooking, eating, resting, reading, and so
                 on. If they perform any kind of straining activity, including fighting, they will lose all the benefits
-                of the rest. If uninterrupted, at the end of the extended rest, they can benefit from the following effects.</p>
+                of the rest. If uninterrupted, at the end of the extended rest, they can benefit from the following
+                effects.</p>
 
             <dl>
                 <dt>Recover Health</dt>
@@ -848,14 +852,16 @@
 
             <h4>During a Rest and Between Adventures</h4>
             <p>The following options are only available during a rest, and cannot be selected outside of one. Available
-                options depend on the type of rest. Additionally, any of these options can be purchased outside of
-                adventures, such during a downtime between adventures, or during the Character Creation phase. Only the
-                character spending experience can benefit from these options, they cannot be purchased for other
+                options depend on the type of rest. Additionally, characters may engage in Downtime
+                between adventures to earn XP through study and practice. Any of the
+                following options can be purchased during downtime or the Character Creation phase. Only the
+                character spending experience can benefit from these options; they cannot be purchased for other
                 characters.</p>
 
             <h5>Ability Acquisition <span>Variable</span></h5>
-            <p>A character can acquire a new ability. The cost depends on the chosen ability. To select a new ability,
-                a character must fulfil all the pre-requisites of that ability, and must not match any of its
+            <p>A character can acquire a new ability or improve a Trait/Skill (which are also listed as ability
+                acquisition). The cost depends on the chosen ability. To select a new ability, a character must fulfil
+                all the pre-requisites of that ability, and must not match any of its
                 incompatibility criteria. The character immediately benefits from the effects of the new ability.</p>
 
             <h5>Change of Occupation <span>25 XP</span></h5>
@@ -902,40 +908,47 @@
             <p>At the beginning, set your occupation to None. You will be able to purchase one later.</p>
 
             <h4 class="numbered">Receive Starting Experience</h4>
-            <p>New characters receive a starting pool of Experience Points (XP) based on their established background and 
-               previous training. The Game Master will specify the Tier for the campaign:</p>
+            <p>New characters receive a starting pool of Experience Points (XP) based on their established background
+                and
+                previous training. The Game Master will specify the Tier for the campaign:</p>
 
             <table>
                 <caption>Starting Experience Tiers</caption>
                 <tr>
                     <th>Tier</th>
-                    <th>Experience</th>
-                    <th>Description</th>
+                    <th>Typical Age</th>
+                    <th>XP Total</th>
+                    <th>Life-Path Rationale</th>
                 </tr>
                 <tr>
                     <td>Rookie</td>
+                    <td>18–21</td>
                     <td>150 XP</td>
-                    <td>A character just beginning their journey.</td>
+                    <td>Foundational education and initial vocational training.</td>
                 </tr>
                 <tr>
                     <td>Junior</td>
+                    <td>22–27</td>
                     <td>350 XP</td>
-                    <td>Someone with professional training or early field experience.</td>
+                    <td>Early professional service combined with several active deployments.</td>
                 </tr>
                 <tr>
                     <td>Intermediate</td>
-                    <td>600 XP</td>
-                    <td>An established individual with several years of active experience.</td>
+                    <td>28–39</td>
+                    <td>700 XP</td>
+                    <td>An established expert with a decade of mixed training and field experience.</td>
                 </tr>
                 <tr>
                     <td>Senior</td>
-                    <td>1100 XP</td>
-                    <td>A highly experienced veteran of their craft.</td>
+                    <td>40–55</td>
+                    <td>1300 XP</td>
+                    <td>A veteran whose skills are honed by 20+ years of high-stakes environments.</td>
                 </tr>
                 <tr>
                     <td>Master</td>
-                    <td>2000 XP</td>
-                    <td>A legendary figure at the peak of their potential.</td>
+                    <td>55+</td>
+                    <td>2100 XP</td>
+                    <td>Legendary status achieved through a lifetime of both rigorous study and epic trials.</td>
                 </tr>
             </table>
 
@@ -1096,6 +1109,100 @@
 
     <section>
         <h2>Game Master's Tools</h2>
+        <article id="gm_awarding_experience">
+            <h3>Awarding Experience</h3>
+            <p>Experience Points (XP) measure the evolution of a character. In the CORE engine, growth is categorised
+                into two distinct types: Downtime and Active Experience.
+                While training builds a foundation, real-life experience under pressure is a far more potent catalyst
+                for mastery.</p>
+
+            <h4>Active Experience (Adventuring)</h4>
+            <p>Adventuring is a full-time, high-intensity involvement. Unlike controlled training, an adventurer
+                faces life-or-death stakes, constant sensory input, and the immediate need to adapt. This pressure
+                accelerates learning significantly. One week of active adventuring is equivalent to over a month
+                of standard training.</p>
+
+            <table>
+                <caption>Adventure Reward Guidelines</caption>
+                <tr>
+                    <th>Adventure Scale</th>
+                    <th>XP Reward</th>
+                    <th>Rationale</th>
+                </tr>
+                <tr>
+                    <td>Session / Short Encounter</td>
+                    <td>2–3 XP</td>
+                    <td>A few days of high tension and practical application.</td>
+                </tr>
+                <tr>
+                    <td>Standard Adventure (1 Week)</td>
+                    <td>5–8 XP</td>
+                    <td>A full week of 24/7 mental and physical readiness.</td>
+                </tr>
+                <tr>
+                    <td>Major Campaign Arc</td>
+                    <td>25–40 XP</td>
+                    <td>Several weeks of unrelenting pressure and critical breakthroughs.</td>
+                </tr>
+                <tr>
+                    <td>Epic Milestone</td>
+                    <td>60+ XP</td>
+                    <td>A life-defining period that pushes the character to their absolute limits.</td>
+                </tr>
+            </table>
+
+            <h4>Downtime</h4>
+            <p>Between adventures, characters may spend their time in Downtime. This
+                represents a regular commitment of 2 to 4 hours per day to a specific discipline. In these
+                controlled conditions, 1 XP represents one week of dedicated practice.
+                Characters must have access to appropriate facilities, mentors, or resources to benefit from
+                this training.</p>
+
+            <h4>Tier Analysis for GMs</h4>
+            <p>The following tiers provide a benchmark for creating NPCs and understanding the life-path of Player
+                Characters. These totals reflect a combination of academic study, professional training, and periods
+                of active service or adventuring throughout a character's life.</p>
+
+            <table>
+                <caption>Tier Rationale and Age Ranges</caption>
+                <tr>
+                    <th>Tier</th>
+                    <th>Typical Age</th>
+                    <th>XP Total</th>
+                    <th>Life-Path Rationale</th>
+                </tr>
+                <tr>
+                    <td>Rookie</td>
+                    <td>18–21</td>
+                    <td>150 XP</td>
+                    <td>Foundational education and initial vocational training.</td>
+                </tr>
+                <tr>
+                    <td>Junior</td>
+                    <td>22–27</td>
+                    <td>350 XP</td>
+                    <td>Early professional service combined with several active deployments.</td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td>28–39</td>
+                    <td>700 XP</td>
+                    <td>An established expert with a decade of mixed training and field experience.</td>
+                </tr>
+                <tr>
+                    <td>Senior</td>
+                    <td>40–55</td>
+                    <td>1300 XP</td>
+                    <td>A veteran whose skills are honed by 20+ years of high-stakes environments.</td>
+                </tr>
+                <tr>
+                    <td>Master</td>
+                    <td>55+</td>
+                    <td>2100 XP</td>
+                    <td>Legendary status achieved through a lifetime of both rigorous study and epic trials.</td>
+                </tr>
+            </table>
+        </article>
     </section>
 
     <section>

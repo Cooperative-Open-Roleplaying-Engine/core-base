@@ -5,11 +5,11 @@
         "abilities": [
             {
                 "name": "Improved Trait",
-                "cost": "Current Score × 20 in XP",
+                "cost": "Current Score × 10 in XP",
                 "requires": "None",
                 "multiple": "Yes",
                 "incompatibility": "None",
-                "description": "You have trained hard to improve one of your traits. You immediately gain 1 point in the selected Trait. The cost of this ability is equal to the current score in the selected Trait multiplied by 5."
+                "description": "You have trained hard to improve one of your traits. You immediately gain 1 point in the selected Trait."
             },
             {
                 "name": "Improved Health",
@@ -25,7 +25,7 @@
                 "requires": "None",
                 "multiple": "Yes",
                 "incompatibility": "None",
-                "description": "You have trained hard to improve one of your skills. You immediately gain a D10 or 5 points, you choose, in the selected Skill. The cost of this ability is equal to the current score in the selected Skill."
+                "description": "You have trained hard to improve one of your skills. You immediately gain a D6 or 3 points, you choose, in the selected Skill."
             }
         ]
     },
@@ -35,7 +35,7 @@
         "abilities": [
             {
                 "name": "Ambidexterity",
-                "cost": "40 XP",
+                "cost": "10 XP",
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
@@ -43,7 +43,7 @@
             },
             {
                 "name": "Dual Wielder",
-                "cost": "25 XP",
+                "cost": "20 XP",
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
