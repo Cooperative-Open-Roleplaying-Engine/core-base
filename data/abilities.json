@@ -1,7 +1,7 @@
 [
     {
-        "name": "Training",
-        "description": "Through training, characters can improve what they are and what they can do.",
+        "name": "Core Development",
+        "description": "Foundational improvements to the character's base nature and learned skills.",
         "abilities": [
             {
                 "name": "Improved Trait",
@@ -30,8 +30,8 @@
         ]
     },
     {
-        "name": "Moves and Attacks",
-        "description": "",
+        "name": "Combat Arts",
+        "description": "Specialised techniques for physical and mental confrontation.",
         "abilities": [
             {
                 "name": "Ambidexterity",
@@ -43,7 +43,7 @@
             },
             {
                 "name": "Dual Wielder",
-                "cost": "20 XP",
+                "cost": "15 XP",
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
@@ -68,22 +68,98 @@
         ]
     },
     {
-        "name": "Charisma and Expression",
-        "description": "",
+        "name": "Tactical Prowess",
+        "description": "Battlefield control, environmental exploitation, and heightened reactions.",
         "abilities": [
+            {
+                "name": "Cover Specialist",
+                "cost": "10 XP",
+                "requires": "None",
+                "multiple": "No",
+                "incompatibility": "None",
+                "description": "You know how to utilise your surroundings effectively. Increase Physical Defence by +1BD whenever you have at least Half Cover."
+            },
+            {
+                "name": "Suppressing Fire",
+                "cost": "15 XP",
+                "requires": "Ranged Combat 2",
+                "multiple": "No",
+                "incompatibility": "None",
+                "description": "By unleashing a hail of fire, you pin enemies down. When you perform an Attack action, you can choose to inflict the Restricted condition on the target instead of dealing damage if the attack hits."
+            },
+            {
+                "name": "Combat Reflexes",
+                "cost": "20 XP",
+                "requires": "None",
+                "multiple": "No",
+                "incompatibility": "None",
+                "description": "Your battle instincts are razor-sharp. You gain a permanent +5 bonus to your Reaction score."
+            }
+        ]
+    },
+    {
+        "name": "Influence and Leadership",
+        "description": "Social standing, reputation, and the ability to command or inspire others.",
+        "abilities": [
+            {
+                "name": "Network of Contacts",
+                "cost": "10 XP",
+                "requires": "None",
+                "multiple": "Yes",
+                "incompatibility": "None",
+                "description": "You have friends in useful places. Each time you take this, define a field (e.g., Criminal, Corporate, Academic). You gain Advantage on Investigation and Insight checks involving that field."
+            },
+            {
+                "name": "Commanding Presence",
+                "cost": "20 XP",
+                "requires": "Presence 3",
+                "multiple": "No",
+                "incompatibility": "None",
+                "description": "Your authority is undeniable. Once per encounter, you may use a Move action to remove the Surprised or Drained condition from an ally within 10 metres."
+            },
             {
                 "name": "Words of Strength",
                 "cost": "10 XP",
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "You know the words to motivate your group and help them draw from their inner resources. ..."
+                "description": "You know the words to motivate your group. Once per short rest, you can restore 1 trait die to an ally who is currently Drained."
             }
         ]
     },
     {
-        "name": "Health and Safety",
-        "description": "",
+        "name": "Technical Mastery",
+        "description": "Interaction with complex machinery, digital interfaces, and academic knowledge.",
+        "abilities": [
+            {
+                "name": "Jury-rigger",
+                "cost": "10 XP",
+                "requires": "Mechanics 2",
+                "multiple": "No",
+                "incompatibility": "None",
+                "description": "You can fix anything with scrap. You can perform temporary repairs on a device using 1 Use Item action. The item functions for a single encounter before breaking again."
+            },
+            {
+                "name": "Neural Interface",
+                "cost": "20 XP",
+                "requires": "None",
+                "multiple": "No",
+                "incompatibility": "None",
+                "description": "You have a direct link to machines. You gain Advantage on all Use Skill checks involving Hacking, Piloting, or Remote Operation of drones."
+            },
+            {
+                "name": "Hacker's Intuition",
+                "cost": "15 XP",
+                "requires": "INT 3",
+                "multiple": "No",
+                "incompatibility": "None",
+                "description": "You navigate digital architectures with ease. The time required for technical tasks involving computers or electronics is halved."
+            }
+        ]
+    },
+    {
+        "name": "Survival and Medicine",
+        "description": "Stability in the field, emergency care, and environmental resilience.",
         "abilities": [
             {
                 "name": "First Aid",
@@ -91,7 +167,15 @@
                 "requires": "None",
                 "multiple": "No",
                 "incompatibility": "None",
-                "description": "Your knowledge of medicine allows you to provide an emergency response to cure the wounded. Once per short rest, you can select another character or yourself. Roll a Medicine skill test using the chosen character's current Physical Health score as the Difficulty Level. In case of success, the chosen character recovers a D10 points in Physical Health. Each Success Level allows you to roll an additional die, and then pick the best one. A Great Success allows you keep an additional die if there is any available. A Great Failure inflicts a D10 points of physical damage instead."
+                "description": "Once per short rest, you can perform a First Aid action. Roll a Medicine skill test vs a Difficulty of 10. Success restores 1D10 points to the target's Physical Health."
+            },
+            {
+                "name": "Hardened Body",
+                "cost": "20 XP",
+                "requires": "CON 3",
+                "multiple": "No",
+                "incompatibility": "None",
+                "description": "You have survived enough to build extreme resilience. You gain a permanent +10 bonus to your maximum Physical Health."
             }
         ]
     }
